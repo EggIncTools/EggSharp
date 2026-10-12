@@ -11,6 +11,7 @@
   <Project Path="EggSharp.GameData/Tests/EggSharp.GameData.Tests.csproj" />
   <Project Path="EggSharp.GameData.Assets/EggSharp.GameData.Assets.csproj" />
   <Project Path="EggSharp.ProtoParity/EggSharp.ProtoParity.csproj" />
+  <Project Path="EggSharp.Protos/EggSharp.Protos.csproj" />
   <Project Path="EggSharp.ProtoParity/Tests/EggSharp.ProtoParity.Tests.csproj" />
   <Project Path="EggSharp.Testing/EggSharp.Testing.csproj" />
   <Project Path="EggSharp.Testing/Tests/EggSharp.Testing.Tests.csproj" />
