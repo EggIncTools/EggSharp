@@ -1,0 +1,2057 @@
+{
+  "rows": [
+    {
+      "id": "lunar_totem_t0_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_totem_t1_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 4,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_totem_t1_r1",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 8,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "lunar_totem_t2_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 20,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_totem_t2_r1",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 40,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "lunar_totem_t3_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_totem_t3_r1",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "lunar_totem_t3_r2",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 150,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "lunar_totem_t3_r3",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 200,
+      "meta": {
+        "boost": "lunar_totem",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "neodymium_medallion_t0_r0",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "neodymium_medallion_t1_r0",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "neodymium_medallion_t1_r1",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "neodymium_medallion_t2_r0",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "neodymium_medallion_t2_r2",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 1.6,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "neodymium_medallion_t3_r0",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "neodymium_medallion_t3_r1",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 2.1,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "neodymium_medallion_t3_r2",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 2.2,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "neodymium_medallion_t3_r3",
+      "target": "DroneFrequency",
+      "combineMode": "Mul",
+      "magnitude": 2.3,
+      "meta": {
+        "boost": "neodymium_medallion",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "light_of_eggendil_t0_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "light_of_eggendil_t1_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "light_of_eggendil_t1_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2.2,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "light_of_eggendil_t2_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "light_of_eggendil_t2_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 15,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "light_of_eggendil_t3_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "light_of_eggendil_t3_r2",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 150,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "light_of_eggendil_t3_r3",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 250,
+      "meta": {
+        "boost": "light_of_eggendil",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "demeters_necklace_t0_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "demeters_necklace_t1_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "demeters_necklace_t1_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.35,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "demeters_necklace_t2_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "demeters_necklace_t2_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.6,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "demeters_necklace_t2_r2",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.75,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "demeters_necklace_t3_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "demeters_necklace_t3_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2.25,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "demeters_necklace_t3_r2",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2.5,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "demeters_necklace_t3_r3",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 3,
+      "meta": {
+        "boost": "demeters_necklace",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t0_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t1_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t1_r1",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 60,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t2_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t2_r2",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 150,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t3_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 200,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t3_r1",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 300,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "vial_of_martian_dust_t3_r3",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 500,
+      "meta": {
+        "boost": "vial_of_martian_dust",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "ornate_gusset_t0_r0",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ornate_gusset_t1_r0",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ornate_gusset_t1_r2",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.12,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 1,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "ornate_gusset_t2_r0",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.15,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ornate_gusset_t2_r1",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.16,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "ornate_gusset_t3_r0",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ornate_gusset_t3_r2",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.22,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "ornate_gusset_t3_r3",
+      "target": "HabCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "ornate_gusset",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "the_chalice_t0_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "the_chalice_t1_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "the_chalice_t1_r2",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.15,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 1,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "the_chalice_t2_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "the_chalice_t2_r1",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.23,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "the_chalice_t2_r2",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "the_chalice_t3_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "the_chalice_t3_r2",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.35,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "the_chalice_t3_r3",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.4,
+      "meta": {
+        "boost": "the_chalice",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "book_of_basan_t0_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "book_of_basan_t1_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "book_of_basan_t2_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "book_of_basan_t2_r2",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "book_of_basan_t3_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "book_of_basan_t3_r2",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "book_of_basan_t3_r3",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "boost": "book_of_basan",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "phoenix_feather_t0_r0",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "phoenix_feather_t1_r0",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "phoenix_feather_t2_r0",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 5,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "phoenix_feather_t2_r1",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 6,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "phoenix_feather_t3_r0",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "phoenix_feather_t3_r1",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 12,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "phoenix_feather_t3_r3",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 15,
+      "meta": {
+        "boost": "phoenix_feather",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "tungsten_ankh_t0_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tungsten_ankh_t1_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tungsten_ankh_t1_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.28,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "tungsten_ankh_t2_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tungsten_ankh_t2_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.75,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "tungsten_ankh_t2_r3",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 2,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "tungsten_ankh_t3_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tungsten_ankh_t3_r1",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2.25,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "tungsten_ankh_t3_r3",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 2.5,
+      "meta": {
+        "boost": "tungsten_ankh",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "aurelian_brooch_t0_r0",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "aurelian_brooch_t1_r0",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "aurelian_brooch_t2_r0",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "aurelian_brooch_t2_r1",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 1.6,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "aurelian_brooch_t2_r2",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 1.7,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "aurelian_brooch_t3_r0",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "aurelian_brooch_t3_r1",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 2.25,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "aurelian_brooch_t3_r2",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 2.5,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "aurelian_brooch_t3_r3",
+      "target": "DroneRewards",
+      "combineMode": "Mul",
+      "magnitude": 3,
+      "meta": {
+        "boost": "aurelian_brooch",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "puzzle_cube_t0_r0",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.95,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "puzzle_cube_t1_r0",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.9,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "puzzle_cube_t1_r2",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.85,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 1,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "puzzle_cube_t2_r0",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.8,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "puzzle_cube_t2_r1",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.78,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "puzzle_cube_t3_r0",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.5,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "puzzle_cube_t3_r1",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.47,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "puzzle_cube_t3_r2",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.45,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "puzzle_cube_t3_r3",
+      "target": "ResearchCost",
+      "combineMode": "Mul",
+      "magnitude": 0.4,
+      "meta": {
+        "boost": "puzzle_cube",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "quantum_metronome_t0_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_metronome_t1_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_metronome_t1_r1",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.12,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "quantum_metronome_t2_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.15,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_metronome_t2_r1",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.17,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "quantum_metronome_t2_r2",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 2,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "quantum_metronome_t3_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_metronome_t3_r1",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.27,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "quantum_metronome_t3_r2",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "quantum_metronome_t3_r3",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.35,
+      "meta": {
+        "boost": "quantum_metronome",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t0_r0",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t1_r0",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t2_r0",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t2_r1",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.6,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t3_r0",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.7,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t3_r1",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.8,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t3_r2",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.9,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "ship_in_a_bottle_t3_r3",
+      "target": "CoopEarnings",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "ship_in_a_bottle",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "tachyon_deflector_t0_r0",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_deflector_t1_r0",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.08,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_deflector_t2_r0",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.12,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_deflector_t2_r1",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.13,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "tachyon_deflector_t3_r0",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.15,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_deflector_t3_r1",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.17,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "tachyon_deflector_t3_r2",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.19,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "tachyon_deflector_t3_r3",
+      "target": "CoopEggLaying",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "tachyon_deflector",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "interstellar_compass_t0_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "interstellar_compass_t1_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "interstellar_compass_t2_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "interstellar_compass_t2_r1",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.22,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "interstellar_compass_t3_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "interstellar_compass_t3_r1",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.35,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "interstellar_compass_t3_r2",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.4,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "interstellar_compass_t3_r3",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "interstellar_compass",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "dilithium_monocle_t0_r0",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_monocle_t1_r0",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_monocle_t2_r0",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.15,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_monocle_t3_r0",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_monocle_t3_r2",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.25,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "dilithium_monocle_t3_r3",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "dilithium_monocle",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "titanium_actuator_t0_r0",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "titanium_actuator_t1_r0",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 4,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "titanium_actuator_t2_r0",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 6,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "titanium_actuator_t2_r1",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 7,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "titanium_actuator_t3_r0",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 10,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "titanium_actuator_t3_r2",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 12,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "titanium_actuator_t3_r3",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 15,
+      "meta": {
+        "boost": "titanium_actuator",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "mercurys_lens_t0_r0",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "mercurys_lens_t1_r0",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "mercurys_lens_t1_r1",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 1.22,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 1,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "mercurys_lens_t2_r0",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 1.5,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "mercurys_lens_t2_r1",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 1.55,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 2,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "mercurys_lens_t3_r0",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 3,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "mercurys_lens_t3_r1",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 2.25,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 3,
+        "rarity": 1
+      }
+    },
+    {
+      "id": "mercurys_lens_t3_r2",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 2.5,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 3,
+        "rarity": 2
+      }
+    },
+    {
+      "id": "mercurys_lens_t3_r3",
+      "target": "FarmValue",
+      "combineMode": "Mul",
+      "magnitude": 3,
+      "meta": {
+        "boost": "mercurys_lens",
+        "tier": 3,
+        "rarity": 3
+      }
+    },
+    {
+      "id": "tachyon_stone_t0_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.02,
+      "meta": {
+        "boost": "tachyon_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_stone_t1_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.04,
+      "meta": {
+        "boost": "tachyon_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "tachyon_stone_t2_r0",
+      "target": "EggLayingRate",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "tachyon_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_stone_t0_r0",
+      "target": "BoostDuration",
+      "combineMode": "Mul",
+      "magnitude": 1.03,
+      "meta": {
+        "boost": "dilithium_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_stone_t1_r0",
+      "target": "BoostDuration",
+      "combineMode": "Mul",
+      "magnitude": 1.06,
+      "meta": {
+        "boost": "dilithium_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "dilithium_stone_t2_r0",
+      "target": "BoostDuration",
+      "combineMode": "Mul",
+      "magnitude": 1.08,
+      "meta": {
+        "boost": "dilithium_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "shell_stone_t0_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "shell_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "shell_stone_t1_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.08,
+      "meta": {
+        "boost": "shell_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "shell_stone_t2_r0",
+      "target": "EggValue",
+      "combineMode": "Mul",
+      "magnitude": 1.1,
+      "meta": {
+        "boost": "shell_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_stone_t0_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.2,
+      "meta": {
+        "boost": "lunar_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_stone_t1_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.3,
+      "meta": {
+        "boost": "lunar_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "lunar_stone_t2_r0",
+      "target": "AwayEarnings",
+      "combineMode": "Mul",
+      "magnitude": 1.4,
+      "meta": {
+        "boost": "lunar_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "soul_stone_t0_r0",
+      "target": "SoulEggBonus",
+      "combineMode": "Add",
+      "magnitude": 0.05,
+      "meta": {
+        "boost": "soul_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "soul_stone_t1_r0",
+      "target": "SoulEggBonus",
+      "combineMode": "Add",
+      "magnitude": 0.1,
+      "meta": {
+        "boost": "soul_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "soul_stone_t2_r0",
+      "target": "SoulEggBonus",
+      "combineMode": "Add",
+      "magnitude": 0.25,
+      "meta": {
+        "boost": "soul_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "prophecy_stone_t0_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 0,
+      "meta": {
+        "boost": "prophecy_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "prophecy_stone_t1_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 0,
+      "meta": {
+        "boost": "prophecy_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "prophecy_stone_t2_r0",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Mul",
+      "magnitude": 0,
+      "meta": {
+        "boost": "prophecy_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_stone_t0_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.02,
+      "meta": {
+        "boost": "quantum_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_stone_t1_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.04,
+      "meta": {
+        "boost": "quantum_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "quantum_stone_t2_r0",
+      "target": "VehicleCapacity",
+      "combineMode": "Mul",
+      "magnitude": 1.05,
+      "meta": {
+        "boost": "quantum_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "terra_stone_t0_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "boost": "terra_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "terra_stone_t1_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "boost": "terra_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "terra_stone_t2_r0",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "boost": "terra_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "life_stone_t0_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.02,
+      "meta": {
+        "boost": "life_stone",
+        "tier": 0,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "life_stone_t1_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.03,
+      "meta": {
+        "boost": "life_stone",
+        "tier": 1,
+        "rarity": 0
+      }
+    },
+    {
+      "id": "life_stone_t2_r0",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1.04,
+      "meta": {
+        "boost": "life_stone",
+        "tier": 2,
+        "rarity": 0
+      }
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "artifactdata",
+      "method": "decoded"
+    },
+    "effects": {
+      "origin": "binary",
+      "locator": "artifactdata",
+      "method": "decoded"
+    },
+    "target": {
+      "origin": "binary",
+      "locator": "GameDimensions::name_str",
+      "method": "manual"
+    }
+  }
+}

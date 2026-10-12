@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Ei.Google</PackageId>
+    <Description>Compiles %24(EggIncProtoPath) into the consuming assembly as Google.Protobuf types in namespace Ei, with an IEiCodec binding and typed EggSharp.Api helpers.</Description>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" />
+    <PackageReference Include="Grpc.Tools" PrivateAssets="none" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EggSharp.Core\EggSharp.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\EggSharp.Ei.Google.props" Pack="true" PackagePath="build" />
+    <None Include="build\EggSharp.Ei.Google.targets" Pack="true" PackagePath="build" />
+    <None Include="Binding\*.cs" Pack="true" PackagePath="contentFiles\cs\any\EggSharp.Ei.Google" BuildAction="Compile" />
+  </ItemGroup>
+</Project>

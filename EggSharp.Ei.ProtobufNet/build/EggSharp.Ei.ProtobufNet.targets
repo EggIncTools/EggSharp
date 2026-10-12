@@ -1,0 +1,37 @@
+<Project>
+  <PropertyGroup>
+    <EggIncProtoGenDir Condition="'$(EggIncProtoGenDir)' == ''">$(BaseIntermediateOutputPath)protogen/</EggIncProtoGenDir>
+    <EggIncProtoGenPath Condition="'$(EggIncProtoGenPath)' == ''">$(EggIncProtoGenDir)ei.cs</EggIncProtoGenPath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(EggSharpEiCompile)' != 'false' and '$(EggIncProtoPath)' != ''">
+    <Compile Include="$(EggIncProtoGenPath)" />
+  </ItemGroup>
+
+  <UsingTask TaskName="QualifyEiTypeRefs" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <FilePath Required="true" ParameterType="System.String" />
+    </ParameterGroup>
+    <Task>
+      <Code Type="Fragment" Language="cs">
+        var source = System.IO.File.ReadAllText(FilePath);
+        var qualified = source.Replace("(MissionInfo.Spaceship", "(global::Ei.MissionInfo.Spaceship").Replace(" MissionInfo.Spaceship", " global::Ei.MissionInfo.Spaceship");
+        System.IO.File.WriteAllText(FilePath, qualified);
+      </Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="GenerateEiProto" BeforeTargets="CoreCompile" Condition="'$(EggSharpEiCompile)' != 'false' and '$(EggIncProtoPath)' != ''" Inputs="$(EggIncProtoPath)" Outputs="$(EggIncProtoGenPath)">
+    <MakeDir Directories="$(EggIncProtoGenDir)" />
+    <Exec Command="dotnet tool restore" WorkingDirectory="$(MSBuildProjectDirectory)" />
+    <Exec Command="dotnet tool run protogen --proto_path=&quot;$([System.IO.Path]::GetDirectoryName('$(EggIncProtoPath)'))&quot; ei.proto --csharp_out=&quot;$(EggIncProtoGenDir)&quot;" WorkingDirectory="$(MSBuildProjectDirectory)" />
+    <QualifyEiTypeRefs FilePath="$(EggIncProtoGenPath)" />
+  </Target>
+
+  <Target Name="EggSharpEiProtobufNetBindingFilter" BeforeTargets="CoreCompile">
+    <ItemGroup>
+      <_EggSharpEiProtobufNetApiReference Include="@(ReferencePath)" Condition="'%(Filename)' == 'EggSharp.Api'" />
+      <Compile Remove="@(Compile)" Condition="'@(_EggSharpEiProtobufNetApiReference)' == '' and '%(Compile.NuGetPackageId)' == 'EggSharp.Ei.ProtobufNet'" />
+    </ItemGroup>
+  </Target>
+</Project>

@@ -1,0 +1,17 @@
+<Project>
+  <ItemGroup Condition="'$(EggSharpEiCompile)' != 'false' and '$(EggIncProtoPath)' != ''">
+    <Protobuf Include="$(EggIncProtoPath)" GrpcServices="None" ProtoRoot="$([System.IO.Path]::GetDirectoryName('$(EggIncProtoPath)'))" />
+  </ItemGroup>
+
+  <Target Name="EggSharpEiGoogleBindingFilter" BeforeTargets="CoreCompile">
+    <ItemGroup>
+      <_EggSharpEiGoogleApiReference Include="@(ReferencePath)" Condition="'%(Filename)' == 'EggSharp.Api'" />
+    </ItemGroup>
+    <PropertyGroup>
+      <_EggSharpEiGoogleHasApi Condition="'@(_EggSharpEiGoogleApiReference)' != ''">true</_EggSharpEiGoogleHasApi>
+    </PropertyGroup>
+    <ItemGroup Condition="'$(_EggSharpEiGoogleHasApi)' != 'true'">
+      <Compile Remove="@(Compile)" Condition="'%(Compile.NuGetPackageId)' == 'EggSharp.Ei.Google'" />
+    </ItemGroup>
+  </Target>
+</Project>

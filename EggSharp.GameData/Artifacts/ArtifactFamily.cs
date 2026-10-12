@@ -1,0 +1,12 @@
+namespace EggSharp.GameData.Artifacts;
+
+public sealed record ArtifactFamily(
+    string Name,
+    int AfxId,
+    string BinaryId,
+    string PluralName,
+    ArtifactKind Kind,
+    int Dimension,
+    int Order,
+    string Description,
+    IReadOnlyList<ArtifactTier> Tiers);

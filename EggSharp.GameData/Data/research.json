@@ -1,0 +1,774 @@
+{
+  "rows": [
+    {
+      "id": "comfy_nests",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "COMFORTABLE NESTS",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "nutritional_sup",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": false,
+        "name": "NUTRITIONAL SUPPLEMENTS",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "better_incubators",
+      "target": "HatcheryRefillRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "BETTER INCUBATORS",
+        "dimension": "hatcheryRefillRateMult"
+      }
+    },
+    {
+      "id": "excitable_chickens",
+      "target": "RunningChickenBonus",
+      "combineMode": "Add",
+      "magnitude": 0.001,
+      "meta": {
+        "epic": false,
+        "name": "EXCITABLE CHICKENS",
+        "dimension": "onscreenChickenMult"
+      }
+    },
+    {
+      "id": "hab_capacity1",
+      "target": "HabCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "HEN HOUSE REMODEL",
+        "dimension": "habCapacityMult"
+      }
+    },
+    {
+      "id": "internal_hatchery1",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 2,
+      "meta": {
+        "epic": false,
+        "name": "INTERNAL HATCHERIES",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "padded_packaging",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": false,
+        "name": "PADDED PACKAGING",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "hatchery_expansion",
+      "target": "HatcheryCapacity",
+      "combineMode": "Add",
+      "magnitude": 10,
+      "meta": {
+        "epic": false,
+        "name": "HATCHERY EXPANSION",
+        "dimension": "hatcheryCapacity"
+      }
+    },
+    {
+      "id": "bigger_eggs",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 1,
+      "meta": {
+        "epic": false,
+        "name": "BIGGER EGGS",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "internal_hatchery2",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 5,
+      "meta": {
+        "epic": false,
+        "name": "INTERNAL HATCHERY UPGRADES",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "leafsprings",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "IMPROVED LEAFSPRINGS",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "vehicle_reliablity",
+      "target": "FleetSize",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "meta": {
+        "epic": false,
+        "name": "VEHICLE RELIABLITY",
+        "dimension": "maxFleetSize"
+      }
+    },
+    {
+      "id": "rooster_booster",
+      "target": "HatcheryRefillRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "ROOSTER BOOSTER",
+        "dimension": "hatcheryRefillRateMult"
+      }
+    },
+    {
+      "id": "coordinated_clucking",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Add",
+      "magnitude": 0.2,
+      "meta": {
+        "epic": false,
+        "name": "COORDINATED CLUCKING",
+        "dimension": "onscreenChickenMultMaxBase"
+      }
+    },
+    {
+      "id": "hatchery_rebuild1",
+      "target": "HatcheryCapacity",
+      "combineMode": "Add",
+      "magnitude": 50,
+      "meta": {
+        "epic": false,
+        "name": "HATCHERY REBUILD",
+        "dimension": "hatcheryCapacity"
+      }
+    },
+    {
+      "id": "usde_prime",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 2,
+      "meta": {
+        "epic": false,
+        "name": "USDE PRIME CERTIFICATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "hen_house_ac",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "HEN HOUSE A/C",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "superfeed",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": false,
+        "name": "$SUPER-FEED™ DIET",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "microlux",
+      "target": "HabCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "MICROLUX™ CHICKEN SUITES",
+        "dimension": "habCapacityMult"
+      }
+    },
+    {
+      "id": "compact_incubators",
+      "target": "HatcheryCapacity",
+      "combineMode": "Add",
+      "magnitude": 10,
+      "meta": {
+        "epic": false,
+        "name": "COMPACT INCUBATORS",
+        "dimension": "hatcheryCapacity"
+      }
+    },
+    {
+      "id": "lightweight_boxes",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "LIGHTWEIGHT BOXES",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "internal_hatchery3",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 10,
+      "meta": {
+        "epic": false,
+        "name": "INTERNAL HATCHERY EXPANSION",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "motivational_clucking",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Add",
+      "magnitude": 0.5,
+      "meta": {
+        "epic": false,
+        "name": "MOTIVATIONAL CLUCKING",
+        "dimension": "onscreenChickenMultMaxBase"
+      }
+    },
+    {
+      "id": "shell_fortification",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.15,
+      "meta": {
+        "epic": false,
+        "name": "SHELL FORTIFICATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "super_alloy",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "SUPER ALLOY FRAMES",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "internal_hatchery4",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 25,
+      "meta": {
+        "epic": false,
+        "name": "INTERNAL HATCHERY EXPANSION",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "quantum_storage",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "QUANTUM EGG STORAGE",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "genetic_purification",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "GENETIC PURIFICATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "internal_hatchery5",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 5,
+      "meta": {
+        "epic": false,
+        "name": "MACHINE LEARNING INCUBATORS",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "time_compress",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "TIME COMPRESSION",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "hover_upgrades",
+      "target": "HoverVehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "HOVER UPGRADES",
+        "dimension": "vehicleCapacityMultHover"
+      }
+    },
+    {
+      "id": "grav_plating",
+      "target": "HabCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.02,
+      "meta": {
+        "epic": false,
+        "name": "GRAV PLATING",
+        "dimension": "habCapacityMult"
+      }
+    },
+    {
+      "id": "chrystal_shells",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": false,
+        "name": "CRYSTALLINE SHELLING",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "autonomous_vehicles",
+      "target": "FleetSize",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "meta": {
+        "epic": false,
+        "name": "AUTONOMOUS VEHICLES",
+        "dimension": "maxFleetSize"
+      }
+    },
+    {
+      "id": "neural_linking",
+      "target": "IHRBase",
+      "combineMode": "Add",
+      "magnitude": 50,
+      "meta": {
+        "epic": false,
+        "name": "NEURAL LINKING",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "telepathic_will",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": false,
+        "name": "TELEPATHIC WILL",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "enlightened_chickens",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Add",
+      "magnitude": 2,
+      "meta": {
+        "epic": false,
+        "name": "ENLIGHTENED CHICKENS",
+        "dimension": "onscreenChickenMultMaxBase"
+      }
+    },
+    {
+      "id": "dark_containment",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "DARK CONTAINMENT",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "atomic_purification",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "ATOMIC PURIFICATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "timeline_diversion",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.02,
+      "meta": {
+        "epic": false,
+        "name": "TIMELINE DIVERSION",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "wormhole_dampening",
+      "target": "PortalHabCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.02,
+      "meta": {
+        "epic": false,
+        "name": "WORMHOLE DAMPENING",
+        "dimension": "portalCapacityMult"
+      }
+    },
+    {
+      "id": "eggsistor",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "EGGSISTOR MINIATURIZATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "micro_coupling",
+      "target": "HyperloopTrainLength",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "meta": {
+        "epic": false,
+        "name": "GRAVITON COUPLING",
+        "dimension": "hyperloopMaxTrainLength"
+      }
+    },
+    {
+      "id": "matter_reconfig",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.01,
+      "meta": {
+        "epic": false,
+        "name": "MATTER RECONFIGURATION",
+        "dimension": "eggValueMult"
+      }
+    },
+    {
+      "id": "hyper_portalling",
+      "target": "HyperloopCarCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": false,
+        "name": "HYPER PORTALLING",
+        "dimension": "hyperloopCarCapacityMult"
+      }
+    },
+    {
+      "id": "relativity_optimization",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": false,
+        "name": "RELATIVITY OPTIMIZATION",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "hold_to_hatch",
+      "target": "HoldToHatchRate",
+      "combineMode": "Add",
+      "magnitude": 2,
+      "meta": {
+        "epic": true,
+        "name": "HOLD TO HATCH",
+        "dimension": "holdToHatchRate"
+      }
+    },
+    {
+      "id": "epic_hatchery",
+      "target": "HatcheryRefillRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": true,
+        "name": "EPIC HATCHERY",
+        "dimension": "hatcheryRefillRateMult"
+      }
+    },
+    {
+      "id": "epic_internal_incubators",
+      "target": "IHRBase",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": true,
+        "name": "EPIC INT. HATCHERIES",
+        "dimension": "internalHatcheryRateBase"
+      }
+    },
+    {
+      "id": "video_doubler_time",
+      "target": "VideoDoublerTime",
+      "combineMode": "Add",
+      "magnitude": 0.5,
+      "meta": {
+        "epic": true,
+        "name": "VIDEO DOUBLER TIME",
+        "dimension": "videoDoublerHours"
+      }
+    },
+    {
+      "id": "epic_clucking",
+      "target": "RunningChickenBonus",
+      "combineMode": "Add",
+      "magnitude": 0.001,
+      "meta": {
+        "epic": true,
+        "name": "EPIC CLUCKING",
+        "dimension": "onscreenChickenMult"
+      }
+    },
+    {
+      "id": "epic_multiplier",
+      "target": "RunningChickenBonusCap",
+      "combineMode": "Add",
+      "magnitude": 2,
+      "meta": {
+        "epic": true,
+        "name": "EPIC MULTIPLIER",
+        "dimension": "onscreenChickenMultMaxBase"
+      }
+    },
+    {
+      "id": "cheaper_contractors",
+      "target": "HabCost",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.05,
+      "meta": {
+        "epic": true,
+        "name": "CHEAPER CONTRACTORS",
+        "dimension": "habCostMult"
+      }
+    },
+    {
+      "id": "bust_unions",
+      "target": "VehicleCost",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.05,
+      "meta": {
+        "epic": true,
+        "name": "BUST UNIONS",
+        "dimension": "vehicleCostMult"
+      }
+    },
+    {
+      "id": "cheaper_research",
+      "target": "ResearchCost",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.05,
+      "meta": {
+        "epic": true,
+        "name": "LAB UPGRADE",
+        "dimension": "researchCostMult"
+      }
+    },
+    {
+      "id": "silo_capacity",
+      "target": "SiloTime",
+      "combineMode": "Add",
+      "magnitude": 360,
+      "meta": {
+        "epic": true,
+        "name": "SILO CAPACITY",
+        "dimension": "siloSeconds"
+      }
+    },
+    {
+      "id": "int_hatch_sharing",
+      "target": "IHRSharing",
+      "combineMode": "Add",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": true,
+        "name": "INTERNAL HATCHERY SHARING",
+        "dimension": "internalHatcherySharing"
+      }
+    },
+    {
+      "id": "int_hatch_calm",
+      "target": "IHROffline",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": true,
+        "name": "INTERNAL HATCHERY CALM",
+        "dimension": "internalHatcheryMultAway"
+      }
+    },
+    {
+      "id": "accounting_tricks",
+      "target": "FarmValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": true,
+        "name": "ACCOUNTING TRICKS",
+        "dimension": "valuationMult"
+      }
+    },
+    {
+      "id": "hold_to_research",
+      "target": "HoldToResearch",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.25,
+      "meta": {
+        "epic": true,
+        "name": "HOLD TO RESEARCH",
+        "dimension": "holdToResearchMult"
+      }
+    },
+    {
+      "id": "soul_eggs",
+      "target": "SoulEggBonus",
+      "combineMode": "Add",
+      "magnitude": 0.01,
+      "meta": {
+        "epic": true,
+        "name": "SOUL FOOD",
+        "dimension": "soulEggBonus"
+      }
+    },
+    {
+      "id": "prestige_bonus",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Add",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": true,
+        "name": "PRESTIGE BONUS",
+        "dimension": "soulEggCollectionMult"
+      }
+    },
+    {
+      "id": "drone_rewards",
+      "target": "DroneRewardQuality",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "meta": {
+        "epic": true,
+        "name": "DRONE REWARDS",
+        "dimension": "droneRewardQualityMult"
+      }
+    },
+    {
+      "id": "epic_egg_laying",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": true,
+        "name": "EPIC COMFY NESTS",
+        "dimension": "eggLayingRateMult"
+      }
+    },
+    {
+      "id": "transportation_lobbyist",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": true,
+        "name": "TRANSPORTATION LOBBYISTS",
+        "dimension": "vehicleCapacityMult"
+      }
+    },
+    {
+      "id": "prophecy_bonus",
+      "target": "ProphecyEggBonus",
+      "combineMode": "Add",
+      "magnitude": 0.01,
+      "meta": {
+        "epic": true,
+        "name": "PROPHECY BONUS",
+        "dimension": "eggOfProphecyBonus"
+      }
+    },
+    {
+      "id": "afx_mission_time",
+      "target": "AfxMissionDuration",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.01,
+      "meta": {
+        "epic": true,
+        "name": "FTL DRIVE UPGRADES",
+        "dimension": "artifactsMissionFTLDurationResearchMult"
+      }
+    },
+    {
+      "id": "afx_mission_capacity",
+      "target": "AfxMissionCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "meta": {
+        "epic": true,
+        "name": "ZERO-G QUANTUM CONTAINMENT",
+        "dimension": "artifactsMissionCapacityResearchMult"
+      }
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "researchdata"
+    },
+    "maxLevel": {
+      "origin": "binary",
+      "locator": "researchdata",
+      "method": "decoded"
+    },
+    "effects": {
+      "origin": "binary",
+      "locator": "researchdata",
+      "method": "decoded"
+    },
+    "epic": {
+      "origin": "binary",
+      "locator": "researchdata",
+      "method": "decoded"
+    }
+  }
+}

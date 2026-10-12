@@ -1,0 +1,6 @@
+<Project>
+  <PropertyGroup>
+    <EggIncProtoPath Condition="'$(EggIncProtoPath)' == ''">$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)../proto/ei.proto'))</EggIncProtoPath>
+    <EggSharpCommonProtoPath Condition="'$(EggSharpCommonProtoPath)' == ''">$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)../proto/common.proto'))</EggSharpCommonProtoPath>
+  </PropertyGroup>
+</Project>

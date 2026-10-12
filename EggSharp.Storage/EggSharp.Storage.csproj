@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Storage</PackageId>
+    <Description>Byte-level storage envelope with gzip, brotli and dictionary zstd.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ZstdSharp.Port" />
+    <EmbeddedResource Include="Dictionaries\*.zdict" />
+  </ItemGroup>
+</Project>

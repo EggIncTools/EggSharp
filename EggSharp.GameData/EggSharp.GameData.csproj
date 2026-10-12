@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.GameData</PackageId>
+    <Description>Egg, Inc. game data extracted from the binary: effect families, catalogs, folding and artifact definitions.</Description>
+    <GameDimensionProto>$(MSBuildThisFileDirectory)..\EggSharp.Protos\proto\ei.proto</GameDimensionProto>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\artifact-definitions.json" LogicalName="artifact-definitions.json" />
+    <EmbeddedResource Include="Data\*.json" Exclude="Data\artifact-definitions.json" LogicalName="game-data/%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <UsingTask TaskName="GenerateGameDimensionTable" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <ProtoPath ParameterType="System.String" Required="true" />
+      <OutputFile ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System.IO" />
+      <Using Namespace="System.Text" />
+      <Using Namespace="System.Text.RegularExpressions" />
+      <Code Type="Fragment" Language="cs"><![CDATA[
+var text = File.ReadAllText(ProtoPath);
+var block = Regex.Match(text, @"message\s+GameModifier\s*\{.*?enum\s+GameDimension\s*\{(?<body>[^}]*)\}", RegexOptions.Singleline);
+if (!block.Success) {
+    Log.LogError("GameModifier.GameDimension not found in " + ProtoPath);
+    return false;
+}
+var entries = Regex.Matches(block.Groups["body"].Value, @"(?<name>[A-Za-z0-9_]+)\s*=\s*(?<code>-?\d+)\s*;");
+if (entries.Count == 0) {
+    Log.LogError("GameModifier.GameDimension has no values in " + ProtoPath);
+    return false;
+}
+var sb = new StringBuilder();
+sb.Append("namespace EggSharp.GameData;\n\ninternal static class GameDimensionTable {\n    internal static readonly (string Name, int Code)[] Entries = [\n");
+foreach (Match m in entries) {
+    sb.Append("        (\"").Append(m.Groups["name"].Value).Append("\", ").Append(m.Groups["code"].Value).Append("),\n");
+}
+sb.Append("    ];\n}\n");
+var content = sb.ToString();
+if (!File.Exists(OutputFile) || File.ReadAllText(OutputFile) != content) {
+    Directory.CreateDirectory(Path.GetDirectoryName(OutputFile));
+    File.WriteAllText(OutputFile, content);
+}
+]]></Code>
+    </Task>
+  </UsingTask>
+
+  <Target Name="GenerateGameDimensionTable" BeforeTargets="CoreCompile" Inputs="$(GameDimensionProto)" Outputs="$(IntermediateOutputPath)GameDimensionTable.g.cs">
+    <PropertyGroup>
+      <GameDimensionTableFile>$(IntermediateOutputPath)GameDimensionTable.g.cs</GameDimensionTableFile>
+    </PropertyGroup>
+    <GenerateGameDimensionTable ProtoPath="$(GameDimensionProto)" OutputFile="$(GameDimensionTableFile)" />
+    <ItemGroup>
+      <Compile Remove="$(GameDimensionTableFile)" />
+      <Compile Include="$(GameDimensionTableFile)" />
+      <FileWrites Include="$(GameDimensionTableFile)" />
+    </ItemGroup>
+  </Target>
+</Project>

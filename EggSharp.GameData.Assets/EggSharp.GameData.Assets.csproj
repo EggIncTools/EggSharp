@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <PackageId>EggSharp.GameData.Assets</PackageId>
+    <Description>Egg, Inc. artifact and mission-target images as static web assets, served at _content/EggSharp.GameData.Assets/.</Description>
+  </PropertyGroup>
+</Project>

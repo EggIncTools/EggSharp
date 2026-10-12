@@ -1,0 +1,14 @@
+name: Data incoming
+
+on:
+  push:
+    branches: [data/incoming]
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.sha }}"

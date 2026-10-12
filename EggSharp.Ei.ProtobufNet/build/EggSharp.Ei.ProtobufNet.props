@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <EggSharpEiCompile Condition="'$(EggSharpEiCompile)' == ''">true</EggSharpEiCompile>
+  </PropertyGroup>
+</Project>

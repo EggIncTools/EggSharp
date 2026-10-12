@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Ei.ProtobufNet</PackageId>
+    <Description>Generates the EggIncProtoPath proto into the consuming assembly as protobuf-net types in namespace Ei through protogen, with an IEiCodec binding.</Description>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoWarn>$(NoWarn);NU5128;IDE0130;CA1812</NoWarn>
+    <EggIncProtoPath>$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)../EggSharp.Protos/proto/ei.proto'))</EggIncProtoPath>
+    <EggIncProtoGenDir>$(BaseIntermediateOutputPath)protogen/$(TargetFramework)/</EggIncProtoGenDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EggSharp.Core\EggSharp.Core.csproj" />
+    <ProjectReference Include="..\EggSharp.Api\EggSharp.Api.csproj" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binding\ProtobufNetEiCodec.cs;Binding\ProtobufNetEiRinfo.cs" />
+    <Compile Include="..\EggSharp.Ei.Google\Binding\EiApiExtensions.cs;..\EggSharp.Ei.Google\Binding\EiEndpoints.cs" Link="Binding\%(Filename)%(Extension)" />
+    <None Include="build\EggSharp.Ei.ProtobufNet.props" Pack="true" PackagePath="build" />
+    <None Include="build\EggSharp.Ei.ProtobufNet.targets" Pack="true" PackagePath="build" />
+    <None Include="Binding\ProtobufNetEiCodec.cs;Binding\ProtobufNetEiRinfo.cs;..\EggSharp.Ei.Google\Binding\EiApiExtensions.cs;..\EggSharp.Ei.Google\Binding\EiEndpoints.cs" Pack="true" PackagePath="contentFiles\cs\any\EggSharp.Ei.ProtobufNet" BuildAction="Compile" />
+  </ItemGroup>
+  <Import Project="build\EggSharp.Ei.ProtobufNet.targets" />
+</Project>

@@ -1,0 +1,340 @@
+{
+  "rows": [
+    {
+      "id": "jimbos_blue_v2",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 3,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 1200,
+        "multiplier": 3
+      }
+    },
+    {
+      "id": "jimbos_purple_v2",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 900,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "jimbos_purple_big",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 10800,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "jimbos_orange",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 600,
+        "multiplier": 50
+      }
+    },
+    {
+      "id": "jimbos_orange_big",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 7200,
+        "multiplier": 50
+      }
+    },
+    {
+      "id": "tachyon_prism_blue_v2",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 600,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "tachyon_prism_blue_big",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 14400,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "tachyon_prism_purple_v2",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 600,
+        "multiplier": 100
+      }
+    },
+    {
+      "id": "tachyon_prism_purple_big",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 7200,
+        "multiplier": 100
+      }
+    },
+    {
+      "id": "tachyon_prism_orange",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1000,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 600,
+        "multiplier": 1000
+      }
+    },
+    {
+      "id": "tachyon_prism_orange_big",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 1000,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 3600,
+        "multiplier": 1000
+      }
+    },
+    {
+      "id": "soul_beacon_blue_v2",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 5,
+      "meta": {
+        "kind": "SoulEggCollectionRate",
+        "durationSeconds": 1800,
+        "multiplier": 5
+      }
+    },
+    {
+      "id": "soul_beacon_purple_v2",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "kind": "SoulEggCollectionRate",
+        "durationSeconds": 1200,
+        "multiplier": 50
+      }
+    },
+    {
+      "id": "soul_beacon_orange",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 500,
+      "meta": {
+        "kind": "SoulEggCollectionRate",
+        "durationSeconds": 600,
+        "multiplier": 500
+      }
+    },
+    {
+      "id": "boost_beacon_blue",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "kind": "BoostEffectiveness",
+        "durationSeconds": 1800,
+        "multiplier": 2
+      }
+    },
+    {
+      "id": "boost_beacon_purple",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "BoostEffectiveness",
+        "durationSeconds": 600,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "boost_beacon_blue_big",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 5,
+      "meta": {
+        "kind": "BoostEffectiveness",
+        "durationSeconds": 3600,
+        "multiplier": 5
+      }
+    },
+    {
+      "id": "boost_beacon_orange",
+      "target": "BoostEffectiveness",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "kind": "BoostEffectiveness",
+        "durationSeconds": 600,
+        "multiplier": 50
+      }
+    },
+    {
+      "id": "soul_mirror_blue",
+      "target": "SoulMirror",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "SoulMirror",
+        "durationSeconds": 600,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "soul_mirror_purple",
+      "target": "SoulMirror",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "SoulMirror",
+        "durationSeconds": 3600,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "soul_mirror_orange",
+      "target": "SoulMirror",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "SoulMirror",
+        "durationSeconds": 86400,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "dilithium_bulb",
+      "target": "UnlimitedHatchery",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "UnlimitedHatchery",
+        "durationSeconds": 600,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "jimbos_blue",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 2,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 3600,
+        "multiplier": 2
+      }
+    },
+    {
+      "id": "jimbos_blue_big",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 3,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 14400,
+        "multiplier": 3
+      }
+    },
+    {
+      "id": "jimbos_purple",
+      "target": "Earnings",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "Earnings",
+        "durationSeconds": 1800,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "tachyon_prism_blue",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 10,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 1800,
+        "multiplier": 10
+      }
+    },
+    {
+      "id": "tachyon_prism_purple",
+      "target": "IHR",
+      "combineMode": "Mul",
+      "magnitude": 100,
+      "meta": {
+        "kind": "IHR",
+        "durationSeconds": 1200,
+        "multiplier": 100
+      }
+    },
+    {
+      "id": "soul_beacon_blue",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 5,
+      "meta": {
+        "kind": "SoulEggCollectionRate",
+        "durationSeconds": 3600,
+        "multiplier": 5
+      }
+    },
+    {
+      "id": "soul_beacon_purple",
+      "target": "SoulEggCollectionRate",
+      "combineMode": "Mul",
+      "magnitude": 50,
+      "meta": {
+        "kind": "SoulEggCollectionRate",
+        "durationSeconds": 1800,
+        "multiplier": 50
+      }
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "boostmanager"
+    },
+    "effects": {
+      "origin": "binary",
+      "locator": "boostmanager",
+      "method": "decoded"
+    },
+    "target": {
+      "origin": "binary",
+      "locator": "GameDimensions::name_str",
+      "method": "manual"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Core</PackageId>
+    <Description>Egg, Inc. wire primitives: EID, version triple, signing, framing, host map.</Description>
+  </PropertyGroup>
+</Project>

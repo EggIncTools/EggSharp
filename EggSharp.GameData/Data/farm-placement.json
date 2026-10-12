@@ -1,0 +1,603 @@
+{
+  "habs": [
+    {
+      "index": 0,
+      "name": "COOP",
+      "width": 3,
+      "extent": 5,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 1,
+      "name": "SHACK",
+      "width": 4,
+      "extent": 6,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 2,
+      "name": "SUPER SHACK",
+      "width": 4.5,
+      "extent": 9,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 3,
+      "name": "SHORT HOUSE",
+      "width": 4.5,
+      "extent": 10,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 4,
+      "name": "THE STANDARD",
+      "width": 4.5,
+      "extent": 15,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 5,
+      "name": "LONG HOUSE",
+      "width": 5,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 6,
+      "name": "DOUBLE DECKER",
+      "width": 5.5,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 7,
+      "name": "WAREHOUSE",
+      "width": 12.2,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 8,
+      "name": "CENTER",
+      "width": 12.5,
+      "extent": 20,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 9,
+      "name": "BUNKER",
+      "width": 7.5,
+      "extent": 20,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 10,
+      "name": "EGGKEA",
+      "width": 15.5,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 11,
+      "name": "HAB 1000",
+      "width": 9.5,
+      "extent": 15,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 12,
+      "name": "HANGAR",
+      "width": 16.5,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 13,
+      "name": "TOWER",
+      "width": 8.2,
+      "extent": 15,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 14,
+      "name": "HAB 10,000",
+      "width": 12,
+      "extent": 18,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 15,
+      "name": "EGGTOPIA",
+      "width": 17,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 16,
+      "name": "MONOLITH",
+      "width": 14,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 17,
+      "name": "PLANET PORTAL",
+      "width": 11,
+      "extent": 25,
+      "depth": 2.200000047683716
+    },
+    {
+      "index": 18,
+      "name": "CHICKEN UNIVERSE",
+      "width": 9.5,
+      "extent": 20,
+      "depth": 4
+    }
+  ],
+  "habRow": {
+    "anchorX": -12,
+    "y": 0,
+    "z": -10.5,
+    "gap": 3
+  },
+  "silos": {
+    "stepX": -6,
+    "baseX": -5,
+    "y": 0,
+    "zEven": 5.5,
+    "zOdd": -0.5
+  },
+  "trophy": {
+    "casePos": {
+      "x": -5.45,
+      "y": 0,
+      "z": 11.254
+    },
+    "columnStepX": 0.692,
+    "originX": -6.831,
+    "rowStepY": 0.699,
+    "originY": 0.143,
+    "rowStepZ": -0.3,
+    "originZ": 11.4539995,
+    "columns": 5,
+    "count": 19,
+    "bonusScale": 1.8,
+    "bonusPos": {
+      "x": -4.0629997,
+      "y": 2.2399998,
+      "z": 10.554
+    }
+  },
+  "labExtents": [
+    10.2,
+    9.2,
+    10.5,
+    13.2,
+    18.2,
+    18.5
+  ],
+  "depotExtents": [
+    9,
+    9,
+    10.1,
+    11.8,
+    13.8,
+    15.9,
+    23.1
+  ],
+  "eggs": [
+    {
+      "index": 0,
+      "name": "EDIBLE",
+      "hatcheryExtent": 12
+    },
+    {
+      "index": 1,
+      "name": "SUPERFOOD",
+      "hatcheryExtent": 12
+    },
+    {
+      "index": 2,
+      "name": "MEDICAL",
+      "hatcheryExtent": 13
+    },
+    {
+      "index": 3,
+      "name": "ROCKET FUEL",
+      "hatcheryExtent": 12.5
+    },
+    {
+      "index": 4,
+      "name": "SUPER MATERIAL",
+      "hatcheryExtent": 13.199999809265137
+    },
+    {
+      "index": 5,
+      "name": "FUSION",
+      "hatcheryExtent": 15.100000381469727
+    },
+    {
+      "index": 6,
+      "name": "QUANTUM",
+      "hatcheryExtent": 17.600000381469727
+    },
+    {
+      "index": 7,
+      "name": "CRISPR",
+      "hatcheryExtent": 14.100000381469727
+    },
+    {
+      "index": 8,
+      "name": "TACHYON",
+      "hatcheryExtent": 20.299999237060547
+    },
+    {
+      "index": 9,
+      "name": "GRAVITON",
+      "hatcheryExtent": 12.899999618530273
+    },
+    {
+      "index": 10,
+      "name": "DILITHIUM",
+      "hatcheryExtent": 15.5
+    },
+    {
+      "index": 11,
+      "name": "PRODIGY",
+      "hatcheryExtent": 17.299999237060547
+    },
+    {
+      "index": 12,
+      "name": "TERRAFORM",
+      "hatcheryExtent": 15.800000190734863
+    },
+    {
+      "index": 13,
+      "name": "ANTIMATTER",
+      "hatcheryExtent": 24
+    },
+    {
+      "index": 14,
+      "name": "DARK MATTER",
+      "hatcheryExtent": 18.5
+    },
+    {
+      "index": 15,
+      "name": "A.I.",
+      "hatcheryExtent": 19.799999237060547
+    },
+    {
+      "index": 16,
+      "name": "NEBULA",
+      "hatcheryExtent": 18.5
+    },
+    {
+      "index": 17,
+      "name": "UNIVERSE",
+      "hatcheryExtent": 19.399999618530273
+    },
+    {
+      "index": 18,
+      "name": "ENLIGHTENMENT",
+      "hatcheryExtent": 13.5
+    }
+  ],
+  "missionControlPose": [
+    {
+      "x": 2.8,
+      "y": 0,
+      "z": 3.7
+    },
+    {
+      "x": 4.5,
+      "y": 0,
+      "z": 6
+    },
+    {
+      "x": 5.5,
+      "y": 0,
+      "z": 6
+    }
+  ],
+  "fuelTankSpacing": [
+    3.2,
+    4.75,
+    7.2,
+    1.1,
+    2.2,
+    1
+  ],
+  "singletons": {
+    "floor": 10,
+    "hoaHomeOffset": 2,
+    "hoaAltOffset": 1.7,
+    "hoaZ": -3.5,
+    "missionControlOffset": 1.5,
+    "fuelTankBaseOffset": 1.5,
+    "fuelTankLockedExtra": 1.5,
+    "fuelTankZUnlocked": 3.7,
+    "fuelTankZLocked": 4.2
+  },
+  "camera": {
+    "distance": [
+      1,
+      1.3,
+      3,
+      2,
+      0.7,
+      0.7,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "height": [
+      5,
+      4,
+      0.5,
+      0.3,
+      1,
+      1,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      1.5
+    ],
+    "staticFocus": [
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": -3.5,
+        "y": 0,
+        "z": 10.5
+      },
+      {
+        "x": -5.5,
+        "y": 0,
+        "z": 11
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": -3,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 12,
+        "y": 0,
+        "z": 21
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    ],
+    "habFocusOffset": {
+      "x": 0,
+      "y": 0,
+      "z": -2
+    },
+    "labFocusBase": {
+      "x": 3.5,
+      "y": 0,
+      "z": -1
+    },
+    "depotFocusBase": {
+      "x": 3.5,
+      "y": 0,
+      "z": 9.5
+    },
+    "hatcheryFocusBase": {
+      "x": 3.5,
+      "y": 0,
+      "z": 2.6
+    },
+    "fuelTankFocusOffset": {
+      "x": 1,
+      "y": 0,
+      "z": -1
+    },
+    "focusExtentPivot": 3.5,
+    "focusExtentScale": 0.5,
+    "hoaFocusExtra": 3,
+    "uiDivisor": 40,
+    "uiHeightScale": 0.5,
+    "uiDistanceScale": 0.1
+  },
+  "vehicles": [
+    {
+      "index": 0,
+      "name": "TRIKE",
+      "length": 2.1
+    },
+    {
+      "index": 1,
+      "name": "TRANSIT VAN",
+      "length": 2.1
+    },
+    {
+      "index": 2,
+      "name": "PICKUP",
+      "length": 2.1
+    },
+    {
+      "index": 3,
+      "name": "10 FOOT",
+      "length": 3.4
+    },
+    {
+      "index": 4,
+      "name": "24 FOOT",
+      "length": 4.3
+    },
+    {
+      "index": 5,
+      "name": "SEMI",
+      "length": 6.5
+    },
+    {
+      "index": 6,
+      "name": "DOUBLE SEMI",
+      "length": 9.6
+    },
+    {
+      "index": 7,
+      "name": "FUTURE SEMI",
+      "length": 6.9
+    },
+    {
+      "index": 8,
+      "name": "MEGA SEMI",
+      "length": 9.4
+    },
+    {
+      "index": 9,
+      "name": "HOVER SEMI",
+      "length": 9.5
+    },
+    {
+      "index": 10,
+      "name": "QUANTUM TRANSPORTER",
+      "length": 7
+    },
+    {
+      "index": 11,
+      "name": "HYPERLOOP TRAIN",
+      "length": 7
+    }
+  ],
+  "road": {
+    "spawnX": 48,
+    "roadZ": 13.33,
+    "roadY": 0,
+    "depotStopX": 7.1,
+    "despawnX": -35,
+    "followGap": 2.5,
+    "maxSpeedMult": 1.5,
+    "roundTripSeconds": 100,
+    "hyperloopVehicleIndex": 11,
+    "emptyVehicleIndex": 12
+  },
+  "binaryVersion": "1.35.6",
+  "provenance": {
+    "habRow": {
+      "origin": "binary",
+      "locator": "GameController::getHabPosition",
+      "method": "decoded"
+    },
+    "habs": {
+      "origin": "binary",
+      "locator": "habdata table 0x103146e60",
+      "method": "decoded"
+    },
+    "silos": {
+      "origin": "binary",
+      "locator": "FarmScene::updateSilo",
+      "method": "decoded"
+    },
+    "trophy": {
+      "origin": "binary",
+      "locator": "FarmScene::updateTrophyCase",
+      "method": "decoded"
+    },
+    "labExtents": {
+      "origin": "binary",
+      "locator": "FarmScene::updateLab",
+      "method": "decoded"
+    },
+    "depotExtents": {
+      "origin": "binary",
+      "locator": "FarmScene::updateDepot",
+      "method": "decoded"
+    },
+    "eggs": {
+      "origin": "binary",
+      "locator": "eggdata record +0xb8",
+      "method": "decoded"
+    },
+    "missionControlPose": {
+      "origin": "binary",
+      "locator": "FarmScene::missionControlPos",
+      "method": "decoded"
+    },
+    "fuelTankSpacing": {
+      "origin": "binary",
+      "locator": "FarmScene::fuelTankPos",
+      "method": "decoded"
+    },
+    "hoa": {
+      "origin": "binary",
+      "locator": "FarmScene::hoaPos",
+      "method": "decoded"
+    },
+    "camera": {
+      "origin": "binary",
+      "locator": "FarmScene::getCameraFocus",
+      "method": "decoded"
+    },
+    "cameraUi": {
+      "origin": "binary",
+      "locator": "FarmScene::getCameraInfo",
+      "method": "decoded"
+    },
+    "vehicles": {
+      "origin": "binary",
+      "locator": "vehicledata record +0xe0",
+      "method": "decoded"
+    },
+    "road": {
+      "origin": "binary",
+      "locator": "VehicleManager::update",
+      "method": "decoded"
+    },
+    "emptyVehicleIndex": {
+      "origin": "binary",
+      "locator": "GameController::attemptHireVehicle",
+      "method": "decoded"
+    }
+  }
+}

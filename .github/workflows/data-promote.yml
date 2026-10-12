@@ -1,0 +1,85 @@
+name: Data promote
+
+on:
+  workflow_run:
+    workflows: [Data incoming]
+    types: [completed]
+
+permissions:
+  contents: read
+  statuses: write
+
+concurrency:
+  group: data-promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    if: github.event.workflow_run.head_branch == 'data/incoming' && github.event.workflow_run.event == 'push'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GIT_AUTHOR_NAME: eggsharp-data-promote[bot]
+      GIT_COMMITTER_NAME: eggsharp-data-promote[bot]
+      GIT_AUTHOR_EMAIL: eggsharp-data-promote[bot]@users.noreply.github.com
+      GIT_COMMITTER_EMAIL: eggsharp-data-promote[bot]@users.noreply.github.com
+      GITHUB_PACKAGES_USER: ${{ github.actor }}
+      GITHUB_PACKAGES_PAT: ${{ secrets.PACKAGES_PAT }}
+      INCOMING: ${{ github.event.workflow_run.head_sha }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      DATA_PATH: EggSharp.GameData/Data/
+    steps:
+      - id: app
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.DATA_PROMOTE_APP_ID }}
+          private-key: ${{ secrets.DATA_PROMOTE_APP_KEY }}
+
+      - name: Status pending
+        run: gh api "repos/$GITHUB_REPOSITORY/statuses/$INCOMING" -f state=pending -f context=eggsharp/data-promote -f target_url="$RUN_URL" -f description="Validating game data"
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ steps.app.outputs.token }}
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Fetch incoming
+        run: git fetch origin "$INCOMING"
+
+      - name: Reject anything outside game data
+        run: |
+          outside=$(git diff --name-only "origin/main...$INCOMING" | grep -v "^$DATA_PATH" || true)
+          if [ -n "$outside" ]; then
+            echo "data/incoming touches paths outside $DATA_PATH:"
+            echo "$outside"
+            exit 1
+          fi
+
+      - name: Rebase, test and fast-forward main
+        run: |
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git checkout -B promote "$INCOMING"
+            git rebase origin/main
+            dotnet test EggSharp.slnx
+            if git push origin promote:main; then
+              exit 0
+            fi
+          done
+          echo "main kept moving; giving up after 3 attempts"
+          exit 1
+
+      - name: Delete data/incoming
+        if: success()
+        run: git push origin --delete data/incoming || true
+
+      - name: Status result
+        if: always()
+        run: |
+          if [ "${{ job.status }}" = "success" ]; then state=success; desc="Promoted to main"; else state=failure; desc="Rejected; main untouched"; fi
+          gh api "repos/$GITHUB_REPOSITORY/statuses/$INCOMING" -f state="$state" -f context=eggsharp/data-promote -f target_url="$RUN_URL" -f description="$desc"

@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net11.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>preview</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591;NU5104</NoWarn>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <Authors>DavidArthurCole</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/EggIncTools/EggSharp</RepositoryUrl>
+  </PropertyGroup>
+  <ItemGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
+    <Using Include="Xunit" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EggIdentity.CodeStyle" PrivateAssets="All" />
+    <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

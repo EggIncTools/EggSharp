@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Testing</PackageId>
+    <Description>Test doubles for Egg, Inc. clients: a stub auxbrain HTTP handler, an endpoint fixture loader and a fake IEggIncApi.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EggSharp.Api\EggSharp.Api.csproj" />
+  </ItemGroup>
+</Project>

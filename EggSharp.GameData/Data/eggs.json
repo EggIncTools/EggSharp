@@ -1,0 +1,161 @@
+{
+  "eggs": [
+    {
+      "index": 0,
+      "name": "EDIBLE",
+      "baseValue": 0.25
+    },
+    {
+      "index": 1,
+      "name": "SUPERFOOD",
+      "baseValue": 1.25
+    },
+    {
+      "index": 2,
+      "name": "MEDICAL",
+      "baseValue": 6.25
+    },
+    {
+      "index": 3,
+      "name": "ROCKET FUEL",
+      "baseValue": 30
+    },
+    {
+      "index": 4,
+      "name": "SUPER MATERIAL",
+      "baseValue": 150
+    },
+    {
+      "index": 5,
+      "name": "FUSION",
+      "baseValue": 700
+    },
+    {
+      "index": 6,
+      "name": "QUANTUM",
+      "baseValue": 3000
+    },
+    {
+      "index": 7,
+      "name": "CRISPR",
+      "baseValue": 12500
+    },
+    {
+      "index": 8,
+      "name": "TACHYON",
+      "baseValue": 50000
+    },
+    {
+      "index": 9,
+      "name": "GRAVITON",
+      "baseValue": 175000
+    },
+    {
+      "index": 10,
+      "name": "DILITHIUM",
+      "baseValue": 525000
+    },
+    {
+      "index": 11,
+      "name": "PRODIGY",
+      "baseValue": 1500000
+    },
+    {
+      "index": 12,
+      "name": "TERRAFORM",
+      "baseValue": 10000000
+    },
+    {
+      "index": 13,
+      "name": "ANTIMATTER",
+      "baseValue": 1000000000
+    },
+    {
+      "index": 14,
+      "name": "DARK MATTER",
+      "baseValue": 100000000000
+    },
+    {
+      "index": 15,
+      "name": "A.I.",
+      "baseValue": 1000000000000
+    },
+    {
+      "index": 16,
+      "name": "NEBULA",
+      "baseValue": 15000000000000
+    },
+    {
+      "index": 17,
+      "name": "UNIVERSE",
+      "baseValue": 100000000000000
+    },
+    {
+      "index": 18,
+      "name": "ENLIGHTENMENT",
+      "baseValue": 1E-07
+    },
+    {
+      "index": 19,
+      "name": "CURIOSITY",
+      "baseValue": 1
+    },
+    {
+      "index": 20,
+      "name": "INTEGRITY",
+      "baseValue": 1
+    },
+    {
+      "index": 21,
+      "name": "HUMILITY",
+      "baseValue": 1
+    },
+    {
+      "index": 22,
+      "name": "RESILIENCE",
+      "baseValue": 1
+    },
+    {
+      "index": 23,
+      "name": "KINDNESS",
+      "baseValue": 1
+    },
+    {
+      "index": 24,
+      "name": "CHOCOLATE",
+      "baseValue": 5
+    },
+    {
+      "index": 25,
+      "name": "EASTER",
+      "baseValue": 0.05
+    },
+    {
+      "index": 26,
+      "name": "WATERBALLOON",
+      "baseValue": 0.1
+    },
+    {
+      "index": 27,
+      "name": "FIREWORK",
+      "baseValue": 4.99
+    },
+    {
+      "index": 28,
+      "name": "PUMPKIN",
+      "baseValue": 0.99
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "eggdata"
+    },
+    "baseValue": {
+      "origin": "binary",
+      "locator": "eggdata",
+      "method": "decoded"
+    }
+  }
+}

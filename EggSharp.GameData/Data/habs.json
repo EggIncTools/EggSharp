@@ -1,0 +1,228 @@
+{
+  "rows": [
+    {
+      "id": "coop",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 250,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 0,
+        "name": "COOP"
+      }
+    },
+    {
+      "id": "shack",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 500,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 1,
+        "name": "SHACK"
+      }
+    },
+    {
+      "id": "super_shack",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 1000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 2,
+        "name": "SUPER SHACK"
+      }
+    },
+    {
+      "id": "short_house",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 2000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 3,
+        "name": "SHORT HOUSE"
+      }
+    },
+    {
+      "id": "the_standard",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 5000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 4,
+        "name": "THE STANDARD"
+      }
+    },
+    {
+      "id": "long_house",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 10000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 5,
+        "name": "LONG HOUSE"
+      }
+    },
+    {
+      "id": "double_decker",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 20000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 6,
+        "name": "DOUBLE DECKER"
+      }
+    },
+    {
+      "id": "warehouse",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 50000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 7,
+        "name": "WAREHOUSE"
+      }
+    },
+    {
+      "id": "center",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 100000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 8,
+        "name": "CENTER"
+      }
+    },
+    {
+      "id": "bunker",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 200000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 9,
+        "name": "BUNKER"
+      }
+    },
+    {
+      "id": "eggkea",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 500000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 10,
+        "name": "EGGKEA"
+      }
+    },
+    {
+      "id": "hab_1000",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 1000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 11,
+        "name": "HAB 1000"
+      }
+    },
+    {
+      "id": "hangar",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 2000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 12,
+        "name": "HANGAR"
+      }
+    },
+    {
+      "id": "tower",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 5000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 13,
+        "name": "TOWER"
+      }
+    },
+    {
+      "id": "hab_10000",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 10000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 14,
+        "name": "HAB 10,000"
+      }
+    },
+    {
+      "id": "eggtopia",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 25000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 15,
+        "name": "EGGTOPIA"
+      }
+    },
+    {
+      "id": "monolith",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 50000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 16,
+        "name": "MONOLITH"
+      }
+    },
+    {
+      "id": "planet_portal",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 100000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 17,
+        "name": "PLANET PORTAL"
+      }
+    },
+    {
+      "id": "chicken_universe",
+      "target": "HabCapacity",
+      "combineMode": "Add",
+      "magnitude": 600000000,
+      "maxLevel": 1,
+      "meta": {
+        "habId": 18,
+        "name": "CHICKEN UNIVERSE"
+      }
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "habdata"
+    },
+    "capacity": {
+      "origin": "binary",
+      "locator": "habdata",
+      "method": "decoded"
+    },
+    "id": {
+      "origin": "derived"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<Solution>
+  <Project Path="EggSharp.Api/EggSharp.Api.csproj" />
+  <Project Path="EggSharp.Api/Tests/EggSharp.Api.Tests.csproj" />
+  <Project Path="EggSharp.Core/EggSharp.Core.csproj" />
+  <Project Path="EggSharp.Core/Tests/EggSharp.Core.Tests.csproj" />
+  <Project Path="EggSharp.Ei.Google/EggSharp.Ei.Google.csproj" />
+  <Project Path="EggSharp.Ei.Google/Tests/EggSharp.Ei.Google.Tests.csproj" />
+  <Project Path="EggSharp.Ei.ProtobufNet/EggSharp.Ei.ProtobufNet.csproj" />
+  <Project Path="EggSharp.Ei.ProtobufNet/Tests/EggSharp.Ei.ProtobufNet.Tests.csproj" />
+  <Project Path="EggSharp.GameData/EggSharp.GameData.csproj" />
+  <Project Path="EggSharp.GameData/Tests/EggSharp.GameData.Tests.csproj" />
+  <Project Path="EggSharp.GameData.Assets/EggSharp.GameData.Assets.csproj" />
+  <Project Path="EggSharp.ProtoParity/EggSharp.ProtoParity.csproj" />
+  <Project Path="EggSharp.ProtoParity/Tests/EggSharp.ProtoParity.Tests.csproj" />
+  <Project Path="EggSharp.Testing/EggSharp.Testing.csproj" />
+  <Project Path="EggSharp.Testing/Tests/EggSharp.Testing.Tests.csproj" />
+  <Project Path="EggSharp.Storage/EggSharp.Storage.csproj" />
+  <Project Path="EggSharp.Storage/Tests/EggSharp.Storage.Tests.csproj" />
+</Solution>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>EggSharp.Protos</PackageId>
+    <Description>Egg, Inc. ei.proto and common.proto as package content, exposed through $(EggIncProtoPath) and $(EggSharpCommonProtoPath).</Description>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="proto\ei.proto" Pack="true" PackagePath="proto" />
+    <None Include="proto\common.proto" Pack="true" PackagePath="proto" />
+    <None Include="build\EggSharp.Protos.props" Pack="true" PackagePath="build" />
+  </ItemGroup>
+</Project>

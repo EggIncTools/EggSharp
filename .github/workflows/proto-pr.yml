@@ -1,0 +1,86 @@
+name: Proto PR
+
+on:
+  pull_request:
+    paths:
+      - "EggSharp.Protos/proto/**"
+
+permissions:
+  contents: read
+  packages: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: proto-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  parity:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_PACKAGES_USER: ${{ github.actor }}
+      GITHUB_PACKAGES_PAT: ${{ secrets.PACKAGES_PAT }}
+      GH_TOKEN: ${{ github.token }}
+      PR: ${{ github.event.pull_request.number }}
+    steps:
+      - name: Temp paths
+        run: |
+          echo "BASE_DIR=$RUNNER_TEMP/proto-base" >> "$GITHUB_ENV"
+          echo "REPORT=$RUNNER_TEMP/proto-parity.txt" >> "$GITHUB_ENV"
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: proto-base-checkout
+          sparse-checkout: EggSharp.Protos/proto
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+
+      - name: Stage main proto
+        run: |
+          mkdir -p "$BASE_DIR"
+          cp proto-base-checkout/EggSharp.Protos/proto/*.proto "$BASE_DIR/"
+          rm -rf proto-base-checkout
+
+      - name: Parity diff against main
+        id: parity
+        run: |
+          set +e
+          : > "$REPORT"
+          status=0
+          for proto in ei.proto common.proto; do
+            if [ -f "$BASE_DIR/$proto" ]; then
+              dotnet run --project EggSharp.ProtoParity/EggSharp.ProtoParity.csproj -- "$BASE_DIR/$proto" "EggSharp.Protos/proto/$proto" EggSharp.ProtoParity/roots.txt > "$RUNNER_TEMP/$proto.txt" 2>&1
+              code=$?
+              cat "$RUNNER_TEMP/$proto.txt" >> "$REPORT"
+              if [ "$code" -eq 1 ]; then
+                status=1
+              elif [ "$code" -ne 0 ]; then
+                exit "$code"
+              fi
+            fi
+          done
+          echo "breaking=$status" >> "$GITHUB_OUTPUT"
+          cat "$REPORT"
+
+      - name: Mark breaking
+        if: steps.parity.outputs.breaking == '1'
+        run: |
+          gh label create breaking --repo "$GITHUB_REPOSITORY" --color B60205 --description "Proto change breaks parity with main" 2>/dev/null || true
+          gh pr edit "$PR" --repo "$GITHUB_REPOSITORY" --add-label breaking
+          {
+            echo "Proto parity diff against \`main\` found breaking changes:"
+            echo
+            echo '```'
+            cat "$REPORT"
+            echo '```'
+          } > "$RUNNER_TEMP/comment.md"
+          gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/comment.md"
+
+      - name: Build with proposed proto
+        run: dotnet build EggSharp.slnx -c Release
