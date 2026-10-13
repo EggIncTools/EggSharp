@@ -819,8 +819,8 @@
     {
       "id": "book_of_basan_t0_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.0025,
       "meta": {
         "boost": "book_of_basan",
         "tier": 0,
@@ -831,8 +831,8 @@
     {
       "id": "book_of_basan_t1_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.005,
       "meta": {
         "boost": "book_of_basan",
         "tier": 1,
@@ -843,8 +843,8 @@
     {
       "id": "book_of_basan_t2_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.0075,
       "meta": {
         "boost": "book_of_basan",
         "tier": 2,
@@ -855,8 +855,8 @@
     {
       "id": "book_of_basan_t2_r2",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.008,
       "meta": {
         "boost": "book_of_basan",
         "tier": 2,
@@ -867,8 +867,8 @@
     {
       "id": "book_of_basan_t3_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.01,
       "meta": {
         "boost": "book_of_basan",
         "tier": 3,
@@ -879,8 +879,8 @@
     {
       "id": "book_of_basan_t3_r2",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.011000000000000001,
       "meta": {
         "boost": "book_of_basan",
         "tier": 3,
@@ -891,8 +891,8 @@
     {
       "id": "book_of_basan_t3_r3",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 1,
+      "combineMode": "Add",
+      "magnitude": 0.012,
       "meta": {
         "boost": "book_of_basan",
         "tier": 3,
@@ -2235,8 +2235,8 @@
     {
       "id": "prophecy_stone_t0_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 0,
+      "combineMode": "Add",
+      "magnitude": 0.0005,
       "meta": {
         "boost": "prophecy_stone",
         "tier": 0,
@@ -2247,8 +2247,8 @@
     {
       "id": "prophecy_stone_t1_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 0,
+      "combineMode": "Add",
+      "magnitude": 0.001,
       "meta": {
         "boost": "prophecy_stone",
         "tier": 1,
@@ -2259,8 +2259,8 @@
     {
       "id": "prophecy_stone_t2_r0",
       "target": "ProphecyEggBonus",
-      "combineMode": "Mul",
-      "magnitude": 0,
+      "combineMode": "Add",
+      "magnitude": 0.0015,
       "meta": {
         "boost": "prophecy_stone",
         "tier": 2,

@@ -265,6 +265,17 @@
       }
     },
     {
+      "id": "quantum_bulb",
+      "target": "None",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "None",
+        "durationSeconds": 600,
+        "multiplier": 1
+      }
+    },
+    {
       "id": "dilithium_bulb",
       "target": "UnlimitedHatchery",
       "combineMode": "Mul",
