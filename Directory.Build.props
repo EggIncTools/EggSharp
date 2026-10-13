@@ -12,6 +12,9 @@
     <Authors>DavidArthurCole</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/EggIncTools/EggSharp</RepositoryUrl>
+    <Version Condition="'$(BUILD_HEIGHT)' != ''">$(BUILD_HEIGHT).0.0</Version>
+    <Version Condition="'$(BUILD_HEIGHT)' == ''">0.0.0</Version>
+    <SourceRevisionId Condition="'$(BUILD_SHA)' != ''">$(BUILD_SHA)</SourceRevisionId>
   </PropertyGroup>
   <PropertyGroup Condition="$(MSBuildProjectName.EndsWith('.Tests'))">
     <TargetFrameworks>net11.0</TargetFrameworks>
