@@ -55,7 +55,8 @@ public enum EffectTarget {
     GoldGiftChance,
     CurrencyGiftChance,
     EnlightenmentEffect,
-    None
+    None,
+    Cash
 }
 
 public enum CombineMode {
