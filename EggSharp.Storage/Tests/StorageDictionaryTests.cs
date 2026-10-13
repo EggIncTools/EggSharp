@@ -1,14 +1,22 @@
 namespace EggSharp.Storage.Tests;
 
 public sealed class StorageDictionaryTests {
-    private static readonly byte[] ZstdDictionaryMagic = [0x37, 0xA4, 0x30, 0xEC];
+    [Fact]
+    public void PinnedIds_NeverChange() {
+        Assert.Equal(1, StorageDictionary.Accounts1Id);
+        Assert.Equal(2, StorageDictionary.CoopStatus1Id);
+    }
 
     [Fact]
-    public void EmbeddedDictionaries_LoadAsZstdDictionaries() {
-        Assert.Equal(ZstdDictionaryMagic, StorageDictionary.Accounts1.Bytes[..4]);
-        Assert.Equal(ZstdDictionaryMagic, StorageDictionary.CoopStatus1.Bytes[..4]);
-        Assert.Equal(1, StorageDictionary.Accounts1.Id);
-        Assert.Equal(2, StorageDictionary.CoopStatus1.Id);
+    public void Assembly_EmbedsNoDictionary() {
+        Assert.DoesNotContain(typeof(StorageDictionary).Assembly.GetManifestResourceNames(), n => n.EndsWith(".zdict", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void Registry_IdsAreUniqueAndNonZero() {
+        var ids = StorageDictionary.Registry.Select(d => d.Id).ToList();
+        Assert.Equal(ids.Distinct().Count(), ids.Count);
+        Assert.DoesNotContain(StorageDictionary.None, ids);
     }
 
     [Fact]
@@ -28,11 +36,9 @@ public sealed class StorageDictionaryTests {
         Assert.Throws<InvalidOperationException>(() => StorageDictionary.Register(221, "test-221", [9]));
     }
 
-    [Theory]
-    [InlineData(1)]
-    [InlineData(2)]
-    public void Register_ReservedIdWithOtherBytes_Throws(byte id) {
-        Assert.Throws<InvalidOperationException>(() => StorageDictionary.Register(id, "impostor", [9, 9, 9]));
+    [Fact]
+    public void Get_Unknown_Throws() {
+        Assert.Throws<InvalidDataException>(() => StorageDictionary.Get(200));
     }
 
     [Fact]

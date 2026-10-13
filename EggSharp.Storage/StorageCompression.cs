@@ -11,18 +11,18 @@ public enum StorageCompressionAlgorithm : byte {
 }
 
 public sealed class StorageCompressionStrategy(StorageCompressionAlgorithm algorithm, int brotliQuality = 6, int rawThreshold = 64, int zstdLevel = 9, StorageDictionary? dictionary = null) {
-    private static volatile StorageCompressionStrategy _accountGraph = new(StorageCompressionAlgorithm.Zstd, dictionary: StorageDictionary.Accounts1);
-    private static volatile StorageCompressionStrategy _coopStatus = new(StorageCompressionAlgorithm.Zstd, dictionary: StorageDictionary.CoopStatus1);
+    private static volatile StorageCompressionStrategy _accountGraph = new(StorageCompressionAlgorithm.Zstd);
+    private static volatile StorageCompressionStrategy _coopStatus = new(StorageCompressionAlgorithm.Zstd);
 
     public static StorageCompressionStrategy AccountGraph => _accountGraph;
 
     public static StorageCompressionStrategy CoopStatus => _coopStatus;
 
-    public static void SetAccountGraph(StorageDictionary dictionary) => _accountGraph = _accountGraph.WithDictionary(dictionary);
+    public static void SetAccountGraph(StorageDictionary? dictionary) => _accountGraph = _accountGraph.WithDictionary(dictionary);
 
-    public static void SetCoopStatus(StorageDictionary dictionary) => _coopStatus = _coopStatus.WithDictionary(dictionary);
+    public static void SetCoopStatus(StorageDictionary? dictionary) => _coopStatus = _coopStatus.WithDictionary(dictionary);
 
-    public StorageCompressionStrategy WithDictionary(StorageDictionary dictionary) =>
+    public StorageCompressionStrategy WithDictionary(StorageDictionary? dictionary) =>
         new(StorageCompressionAlgorithm.Zstd, BrotliQuality, RawThreshold, ZstdLevel, dictionary);
 
     public StorageCompressionAlgorithm Algorithm { get; } = algorithm;

@@ -32,9 +32,18 @@ public sealed class StorageCompressionTests {
     }
 
     [Fact]
-    public void Zstd_WithAccountsDictionary_WritesDictionaryIdOne() {
+    public void DefaultStrategies_CarryNoDictionary() {
         var stored = StorageCompression.Compress(Compressible, StorageCompressionStrategy.AccountGraph);
-        Assert.Equal([0xEB, 0x03, 0x01], stored[..3]);
+        Assert.Equal([0xEB, 0x03, 0x00], stored[..3]);
+        Assert.Equal(Compressible, StorageCompression.Decompress(stored));
+        Assert.Equal(StorageDictionary.None, StorageCompressionStrategy.CoopStatus.DictionaryId);
+    }
+
+    [Fact]
+    public void Zstd_WithRegisteredDictionary_RoundTripsUnderItsId() {
+        var dictionary = StorageDictionary.Register(211, "test-211", Compressible[..200]);
+        var stored = StorageCompression.Compress(Compressible, StorageCompressionStrategy.AccountGraph.WithDictionary(dictionary));
+        Assert.Equal([0xEB, 0x03, 211], stored[..3]);
         Assert.Equal(Compressible, StorageCompression.Decompress(stored));
     }
 
@@ -66,8 +75,8 @@ public sealed class StorageCompressionTests {
 
     [Fact]
     public void SetCoopStatus_SwitchesWriteDictionary() {
-        var original = StorageCompressionStrategy.CoopStatus.Dictionary!;
-        var replacement = StorageDictionary.Register(210, "test-210", StorageDictionary.CoopStatus1.Bytes);
+        var original = StorageCompressionStrategy.CoopStatus.Dictionary;
+        var replacement = StorageDictionary.Register(210, "test-210", Compressible[..200]);
         try {
             StorageCompressionStrategy.SetCoopStatus(replacement);
             Assert.Equal(210, StorageCompression.Compress(Compressible, StorageCompressionStrategy.CoopStatus)[2]);

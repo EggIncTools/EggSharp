@@ -5,6 +5,5 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ZstdSharp.Port" />
-    <EmbeddedResource Include="Dictionaries\*.zdict" />
   </ItemGroup>
 </Project>
