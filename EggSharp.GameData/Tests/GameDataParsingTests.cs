@@ -15,7 +15,7 @@ public sealed class GameDataParsingTests {
         {
           "binaryVersion": "test-1.0",
           "rows": [
-            { "id": "res_a", "target": "IHR", "combineMode": "MulPlusOne", "magnitude": 0.05, "maxLevel": 10, "meta": { "name": "Test Research", "epic": false } }
+            { "id": "res_a", "target": "IHR", "combineMode": "MulPlusOne", "magnitude": 0.05, "maxLevel": 10, "meta": { "name": "Test Research", "epic": false, "tier": 1, "priceStart": 100, "priceEnd": 5000, "pricePercent": 0.1, "epicPriceStart": 0, "epicPriceEnd": 0 } }
           ]
         }
         """;

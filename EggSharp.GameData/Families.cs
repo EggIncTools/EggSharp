@@ -51,7 +51,12 @@ public sealed class ResearchFamily(EffectDataFile file) : EffectFamily(Families.
         new EffectField("help", EffectFieldType.String, false),
         new EffectField("dimension", EffectFieldType.String, false),
         new EffectField("tier", EffectFieldType.Int, false),
-        new EffectField("research", EffectFieldType.String, false)
+        new EffectField("research", EffectFieldType.String, false),
+        new EffectField("priceStart", EffectFieldType.Double, false),
+        new EffectField("priceEnd", EffectFieldType.Double, false),
+        new EffectField("pricePercent", EffectFieldType.Double, false),
+        new EffectField("epicPriceStart", EffectFieldType.Double, false),
+        new EffectField("epicPriceEnd", EffectFieldType.Double, false)
     ]);
 }
 
