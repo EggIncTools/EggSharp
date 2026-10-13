@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using System.Collections.Concurrent;
 using System.IO;
@@ -34,8 +35,9 @@ internal sealed class ProtobufNetEiCodec : IEiCodec {
 
     public byte[] WrapAuthenticated(byte[] message, string? code) {
         var envelope = new AuthenticatedMessage { Message = message };
-        if (code is not null)
+        if (code is not null) {
             envelope.Code = code;
+        }
         return Serialize(envelope);
     }
 
@@ -62,8 +64,9 @@ internal sealed class ProtobufNetEiCodec : IEiCodec {
             ProtobufNetEiRinfo.Apply(direct, rinfo);
             return;
         }
-        if (request is EggIncFirstContactRequest first)
+        if (request is EggIncFirstContactRequest first) {
             ProtobufNetEiRinfo.ApplyFirstContact(first, rinfo, first.ShouldSerializePlatform());
+        }
         var type = request.GetType();
         var property = RinfoProperties.GetOrAdd(type, FindRinfoProperty)
             ?? throw new ArgumentException($"{MessageName(type)} has no rinfo field.", nameof(request));
@@ -72,7 +75,9 @@ internal sealed class ProtobufNetEiCodec : IEiCodec {
         property.SetValue(request, info);
     }
 
-    public string MessageName(Type messageType) => Names.GetOrAdd(messageType, BuildName);
+    public string MessageName(Type messageType) {
+        return Names.GetOrAdd(messageType, BuildName);
+    }
 
     private static object ParseExact(Type messageType, byte[] bytes) {
         using var stream = new MemoryStream(bytes, false);

@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -35,8 +36,9 @@ internal static class EiApiExtensions {
         string botError;
         try {
             var bot = await api.BotFirstContact(userId, platform, options, cancellationToken);
-            if (bot is { Success: true, Response.Backup: not null })
+            if (bot is { Success: true, Response.Backup: not null }) {
                 return bot;
+            }
             botError = bot.Success ? Errors.NoBackup : HttpOrError(bot);
         } catch (Exception e) when (e is not OperationCanceledException || !cancellationToken.IsCancellationRequested) {
             botError = Fill(Errors.BotException, e.Message);
@@ -60,8 +62,9 @@ internal static class EiApiExtensions {
                 request,
                 WithUser(options, userId),
                 cancellationToken);
-            if (outcome.Success)
+            if (outcome.Success) {
                 return outcome;
+            }
             var error = HttpOrError(outcome);
             options?.Logger?.FirstContactSecureFailed(userId, error);
             return ApiOutcome.Fail<EggIncFirstContactResponse>(error);
@@ -212,19 +215,20 @@ internal static class EiApiExtensions {
                 CoopIdentifier = coopId.ToLowerInvariant(),
                 ClientTimestamp = (timeProvider ?? TimeProvider.System).GetUtcNow().ToUnixTimeSeconds()
             };
-            if (userId is not null)
+            if (userId is not null) {
                 request.UserId = userId;
+            }
             request.ClientVersion = (options?.Versions ?? api.Versions).ClientVersion;
             var outcome = await api.Call<ContractCoopStatusRequest, ContractCoopStatusResponse>(
                 endpoint,
                 request,
                 WithUser(options, userId),
                 cancellationToken);
-            if (!outcome.Success)
-                return ApiOutcome.Fail<ContractCoopStatusResponse>(outcome.Error ?? Errors.NoResponse);
-            return string.Equals(outcome.Response?.CoopIdentifier, request.CoopIdentifier, StringComparison.OrdinalIgnoreCase)
-                ? outcome
-                : ApiOutcome.Fail<ContractCoopStatusResponse>(Errors.NoResponse);
+            return !outcome.Success
+                ? ApiOutcome.Fail<ContractCoopStatusResponse>(outcome.Error ?? Errors.NoResponse)
+                : string.Equals(outcome.Response?.CoopIdentifier, request.CoopIdentifier, StringComparison.OrdinalIgnoreCase)
+                    ? outcome
+                    : ApiOutcome.Fail<ContractCoopStatusResponse>(Errors.NoResponse);
         } catch (ArgumentNullException e) {
             return ApiOutcome.Fail<ContractCoopStatusResponse>(Fill(Errors.BotException, e.Message));
         }
@@ -238,12 +242,15 @@ internal static class EiApiExtensions {
             ClientVersion = (options?.Versions ?? api.Versions).ClientVersion,
             Platform = platform ?? PresetPlatform(api)
         };
-        if (defaults.FirstContactUsername)
+        if (defaults.FirstContactUsername) {
             request.Username = "";
+        }
         return request;
     }
 
-    private static Platform PresetPlatform(IEggIncApi api) => Enum.Parse<Platform>(api.Preset.Rinfo.FirstContactPlatform, true);
+    private static Platform PresetPlatform(IEggIncApi api) {
+        return Enum.Parse<Platform>(api.Preset.Rinfo.FirstContactPlatform, true);
+    }
 
     private static string HttpOrError<T>(ApiOutcome<T> outcome) {
         return outcome.StatusCode is not null ? Errors.ErrorResponse : outcome.Error ?? Errors.ErrorResponse;
@@ -253,7 +260,9 @@ internal static class EiApiExtensions {
         return userId is null || options?.UserId is not null ? options : (options ?? new ApiCallOptions()) with { UserId = userId };
     }
 
-    private static string Fill(string template, string value) => template.Replace("{0}", value, StringComparison.Ordinal);
+    private static string Fill(string template, string value) {
+        return template.Replace("{0}", value, StringComparison.Ordinal);
+    }
 }
 
 internal static partial class EiApiLog {

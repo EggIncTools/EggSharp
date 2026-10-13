@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using Ei;
 
@@ -5,28 +6,37 @@ namespace EggSharp.Api;
 
 internal static class EiRinfo {
     public static void Apply(BasicRequestInfo info, RinfoValues rinfo) {
-        if (rinfo.UserId is not null)
+        if (rinfo.UserId is not null) {
             info.EiUserId = rinfo.UserId;
+        }
         info.ClientVersion = rinfo.ClientVersion;
-        if (rinfo.Version is not null)
+        if (rinfo.Version is not null) {
             info.Version = rinfo.Version;
-        if (rinfo.Build is not null)
+        }
+        if (rinfo.Build is not null) {
             info.Build = rinfo.Build;
-        if (rinfo.Platform is not null)
+        }
+        if (rinfo.Platform is not null) {
             info.Platform = rinfo.Platform;
-        if (rinfo.Country is not null)
+        }
+        if (rinfo.Country is not null) {
             info.Country = rinfo.Country;
-        if (rinfo.Language is not null)
+        }
+        if (rinfo.Language is not null) {
             info.Language = rinfo.Language;
-        if (rinfo.Debug is { } debug)
+        }
+        if (rinfo.Debug is { } debug) {
             info.Debug = debug;
+        }
     }
 
     public static void ApplyFirstContact(EggIncFirstContactRequest request, RinfoValues rinfo, bool platformSet) {
-        if (rinfo.DeviceId is not null)
+        if (rinfo.DeviceId is not null) {
             request.DeviceId = rinfo.DeviceId;
-        if (!platformSet && TryPlatform(rinfo.Platform, out var platform))
+        }
+        if (!platformSet && TryPlatform(rinfo.Platform, out var platform)) {
             request.Platform = platform;
+        }
     }
 
     private static bool TryPlatform(string name, out Platform platform) {

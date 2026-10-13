@@ -1,3 +1,4 @@
+#nullable enable
 using System;
 using System.Collections.Concurrent;
 using System.Reflection;
@@ -11,7 +12,9 @@ namespace EggSharp.Api;
 internal sealed class GoogleEiCodec : IEiCodec {
     private static readonly ConcurrentDictionary<Type, MessageDescriptor> Descriptors = new();
 
-    public byte[] Serialize(object message) => ((IMessage)message).ToByteArray();
+    public byte[] Serialize(object message) {
+        return ((IMessage)message).ToByteArray();
+    }
 
     public object Parse(Type messageType, byte[] bytes) {
         try {
@@ -23,8 +26,9 @@ internal sealed class GoogleEiCodec : IEiCodec {
 
     public byte[] WrapAuthenticated(byte[] message, string? code) {
         var envelope = new AuthenticatedMessage { Message = ByteString.CopyFrom(message) };
-        if (code is not null)
+        if (code is not null) {
             envelope.Code = code;
+        }
         return envelope.ToByteArray();
     }
 
@@ -49,8 +53,9 @@ internal sealed class GoogleEiCodec : IEiCodec {
             EiRinfo.Apply(direct, rinfo);
             return;
         }
-        if (request is EggIncFirstContactRequest first)
+        if (request is EggIncFirstContactRequest first) {
             EiRinfo.ApplyFirstContact(first, rinfo, first.HasPlatform);
+        }
         var message = (IMessage)request;
         var field = message.Descriptor.FindFieldByName("rinfo")
             ?? throw new ArgumentException($"{message.Descriptor.FullName} has no rinfo field.", nameof(request));
@@ -59,13 +64,18 @@ internal sealed class GoogleEiCodec : IEiCodec {
         field.Accessor.SetValue(message, info);
     }
 
-    public string MessageName(Type messageType) => DescriptorOf(messageType).FullName;
+    public string MessageName(Type messageType) {
+        return DescriptorOf(messageType).FullName;
+    }
 
-    private static IMessage ParseExact(Type messageType, byte[] bytes) => DescriptorOf(messageType).Parser.ParseFrom(bytes);
+    private static IMessage ParseExact(Type messageType, byte[] bytes) {
+        return DescriptorOf(messageType).Parser.ParseFrom(bytes);
+    }
 
     private static MessageDescriptor DescriptorOf(Type messageType) {
-        if (Descriptors.TryGetValue(messageType, out var cached))
+        if (Descriptors.TryGetValue(messageType, out var cached)) {
             return cached;
+        }
         var property = messageType.GetProperty("Descriptor", BindingFlags.Public | BindingFlags.Static);
         var descriptor = property?.GetValue(null) as MessageDescriptor
             ?? throw new ArgumentException($"{messageType.FullName} is not a generated protobuf message.", nameof(messageType));
