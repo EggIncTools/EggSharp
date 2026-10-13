@@ -9,9 +9,22 @@
     </ItemGroup>
     <PropertyGroup>
       <_EggSharpEiGoogleHasApi Condition="'@(_EggSharpEiGoogleApiReference)' != ''">true</_EggSharpEiGoogleHasApi>
+      <_EggSharpEiGoogleGlobalConfig>$(IntermediateOutputPath)EggSharp.Ei.Google.globalconfig</_EggSharpEiGoogleGlobalConfig>
     </PropertyGroup>
     <ItemGroup Condition="'$(_EggSharpEiGoogleHasApi)' != 'true'">
       <Compile Remove="@(Compile)" Condition="'%(Compile.NuGetPackageId)' == 'EggSharp.Ei.Google'" />
+    </ItemGroup>
+    <ItemGroup>
+      <_EggSharpEiGoogleSource Include="@(Compile)" Condition="'%(Compile.NuGetPackageId)' == 'EggSharp.Ei.Google'">
+        <Section>$([System.String]::Copy('%(FullPath)').Replace('\', '/'))</Section>
+      </_EggSharpEiGoogleSource>
+      <_EggSharpEiGoogleConfigLine Include="is_global = true" />
+      <_EggSharpEiGoogleConfigLine Include="@(_EggSharpEiGoogleSource->'[%(Section)]%0Agenerated_code = true')" />
+    </ItemGroup>
+    <WriteLinesToFile Condition="'@(_EggSharpEiGoogleSource)' != ''" File="$(_EggSharpEiGoogleGlobalConfig)" Lines="@(_EggSharpEiGoogleConfigLine)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup Condition="'@(_EggSharpEiGoogleSource)' != ''">
+      <EditorConfigFiles Include="$(_EggSharpEiGoogleGlobalConfig)" />
+      <FileWrites Include="$(_EggSharpEiGoogleGlobalConfig)" />
     </ItemGroup>
   </Target>
 </Project>

@@ -1,4 +1,3 @@
-#nullable enable
 using System;
 using System.Collections.Concurrent;
 using System.IO;
@@ -80,9 +79,14 @@ internal sealed class ProtobufNetEiCodec : IEiCodec {
         return Serializer.NonGeneric.Deserialize(messageType, stream);
     }
 
-    private static PropertyInfo? FindRinfoProperty(Type type) =>
-        type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
-            .FirstOrDefault(p => p.PropertyType == typeof(BasicRequestInfo) && (p.GetCustomAttribute<ProtoMemberAttribute>()?.Name == RinfoField || p.Name == RinfoProperty));
+    private static PropertyInfo? FindRinfoProperty(Type type) {
+        return type.GetProperties(BindingFlags.Public | BindingFlags.Instance)
+            .FirstOrDefault(p => p.PropertyType == typeof(BasicRequestInfo) && IsRinfo(p));
+    }
+
+    private static bool IsRinfo(PropertyInfo property) {
+        return property.GetCustomAttribute<ProtoMemberAttribute>()?.Name == RinfoField || property.Name == RinfoProperty;
+    }
 
     private static string BuildName(Type messageType) {
         var contract = messageType.GetCustomAttribute<ProtoContractAttribute>()

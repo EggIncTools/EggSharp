@@ -33,5 +33,20 @@
       <_EggSharpEiProtobufNetApiReference Include="@(ReferencePath)" Condition="'%(Filename)' == 'EggSharp.Api'" />
       <Compile Remove="@(Compile)" Condition="'@(_EggSharpEiProtobufNetApiReference)' == '' and '%(Compile.NuGetPackageId)' == 'EggSharp.Ei.ProtobufNet'" />
     </ItemGroup>
+    <PropertyGroup>
+      <_EggSharpEiProtobufNetGlobalConfig>$(IntermediateOutputPath)EggSharp.Ei.ProtobufNet.globalconfig</_EggSharpEiProtobufNetGlobalConfig>
+    </PropertyGroup>
+    <ItemGroup>
+      <_EggSharpEiProtobufNetSource Include="@(Compile)" Condition="'%(Compile.NuGetPackageId)' == 'EggSharp.Ei.ProtobufNet'">
+        <Section>$([System.String]::Copy('%(FullPath)').Replace('\', '/'))</Section>
+      </_EggSharpEiProtobufNetSource>
+      <_EggSharpEiProtobufNetConfigLine Include="is_global = true" />
+      <_EggSharpEiProtobufNetConfigLine Include="@(_EggSharpEiProtobufNetSource->'[%(Section)]%0Agenerated_code = true')" />
+    </ItemGroup>
+    <WriteLinesToFile Condition="'@(_EggSharpEiProtobufNetSource)' != ''" File="$(_EggSharpEiProtobufNetGlobalConfig)" Lines="@(_EggSharpEiProtobufNetConfigLine)" Overwrite="true" WriteOnlyWhenDifferent="true" />
+    <ItemGroup Condition="'@(_EggSharpEiProtobufNetSource)' != ''">
+      <EditorConfigFiles Include="$(_EggSharpEiProtobufNetGlobalConfig)" />
+      <FileWrites Include="$(_EggSharpEiProtobufNetGlobalConfig)" />
+    </ItemGroup>
   </Target>
 </Project>

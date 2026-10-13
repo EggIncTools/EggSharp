@@ -1,4 +1,3 @@
-#nullable enable
 using System;
 using Ei;
 
@@ -27,6 +26,8 @@ internal static class ProtobufNetEiRinfo {
             request.Platform = platform;
     }
 
-    private static bool TryPlatform(string name, out Platform platform) =>
-        Enum.TryParse(name, true, out platform) || Enum.TryParse(name.Replace("_", "", StringComparison.Ordinal), true, out platform);
+    private static bool TryPlatform(string name, out Platform platform) {
+        return Enum.TryParse(name, true, out platform)
+            || Enum.TryParse(name.Replace("_", "", StringComparison.Ordinal), true, out platform);
+    }
 }

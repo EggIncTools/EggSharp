@@ -56,6 +56,7 @@ csharp_style_prefer_null_check_over_type_check = true:warning
 csharp_style_conditional_expression_over_assignment = true:suggestion
 
 csharp_prefer_braces = when_multiline:warning
+dotnet_style_allow_multiple_blank_lines_experimental = false:warning
 csharp_prefer_simple_using_statement = true:warning
 csharp_style_prefer_method_group_conversion = true:silent
 
@@ -74,6 +75,8 @@ csharp_style_prefer_readonly_struct = true:suggestion
 csharp_style_prefer_primary_constructors = true:suggestion
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:warning
 
+dotnet_style_allow_multiple_blank_lines_experimental = false:warning
+
 dotnet_code_quality_unused_parameters = all:warning
 csharp_style_unused_value_assignment_preference = discard_variable:warning
 csharp_style_unused_value_expression_statement_preference = discard_variable:silent
@@ -85,9 +88,6 @@ dotnet_diagnostic.CA1848.severity = suggestion
 dotnet_diagnostic.CA1873.severity = suggestion
 
 dotnet_code_quality.CA1711.allowed_suffixes = Dictionary|Enum
-
-[EggSharp.Ei.*/Binding/*.cs]
-dotnet_diagnostic.IDE0240.severity = none
 
 [EggSharp.GameData/EffectSchema.cs]
 dotnet_diagnostic.CA1720.severity = none

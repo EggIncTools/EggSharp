@@ -1,4 +1,3 @@
-#nullable enable
 using System;
 using System.Collections.Concurrent;
 using System.Reflection;
@@ -67,7 +66,8 @@ internal sealed class GoogleEiCodec : IEiCodec {
     private static MessageDescriptor DescriptorOf(Type messageType) {
         if (Descriptors.TryGetValue(messageType, out var cached))
             return cached;
-        var descriptor = messageType.GetProperty("Descriptor", BindingFlags.Public | BindingFlags.Static)?.GetValue(null) as MessageDescriptor
+        var property = messageType.GetProperty("Descriptor", BindingFlags.Public | BindingFlags.Static);
+        var descriptor = property?.GetValue(null) as MessageDescriptor
             ?? throw new ArgumentException($"{messageType.FullName} is not a generated protobuf message.", nameof(messageType));
         return Descriptors.GetOrAdd(messageType, descriptor);
     }
