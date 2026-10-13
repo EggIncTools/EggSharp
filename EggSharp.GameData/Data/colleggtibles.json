@@ -51,6 +51,16 @@
       ]
     },
     {
+      "identifier": "gatoregg",
+      "dimension": "EGG_LAYING_RATE",
+      "tierValues": [
+        1.01,
+        1.02,
+        1.03,
+        1.05
+      ]
+    },
+    {
       "identifier": "ice",
       "dimension": "RESEARCH_COST",
       "tierValues": [
@@ -122,18 +132,20 @@
     }
   ],
   "contractEggMap": {
-    "thermal-runaway-2026": "ice",
-    "model-kits-2026": "pegg"
+    "etched-weights-2026": "silicon",
+    "egg-cond-2026": "ice",
+    "hell-week-2026": "gatoregg",
+    "easter-real": "easter"
   },
   "gameVersion": "",
   "provenance": {
     "buffs": {
-      "origin": "fixture",
+      "origin": "db",
       "locator": "ei/get_periodicals",
       "method": "derived from captured get_periodicals"
     },
     "contractEggMap": {
-      "origin": "fixture",
+      "origin": "db",
       "locator": "ei/get_periodicals",
       "method": "derived from captured get_periodicals"
     }

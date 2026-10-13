@@ -56,6 +56,39 @@
       }
     },
     {
+      "id": "subsidy_application",
+      "target": "Cash",
+      "combineMode": "Mul",
+      "magnitude": 0.1,
+      "meta": {
+        "kind": "Cash",
+        "durationSeconds": 0,
+        "multiplier": 0.1
+      }
+    },
+    {
+      "id": "blank_check",
+      "target": "Cash",
+      "combineMode": "Mul",
+      "magnitude": 1,
+      "meta": {
+        "kind": "Cash",
+        "durationSeconds": 0,
+        "multiplier": 1
+      }
+    },
+    {
+      "id": "money_printer",
+      "target": "Cash",
+      "combineMode": "Mul",
+      "magnitude": 5,
+      "meta": {
+        "kind": "Cash",
+        "durationSeconds": 0,
+        "multiplier": 5
+      }
+    },
+    {
       "id": "tachyon_prism_blue_v2",
       "target": "IHR",
       "combineMode": "Mul",

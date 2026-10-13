@@ -5,10 +5,16 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "COMFORTABLE NESTS",
-        "dimension": "eggLayingRateMult"
+        "description": "Increase egg laying rate by 10%",
+        "dimension": "eggLayingRateMult",
+        "tier": 0,
+        "priceStart": 0.009999999776482582,
+        "priceEnd": 2.299999952316284,
+        "pricePercent": 0.7
       }
     },
     {
@@ -16,10 +22,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 40,
       "meta": {
         "epic": false,
         "name": "NUTRITIONAL SUPPLEMENTS",
-        "dimension": "eggValueMult"
+        "description": "Increase egg value by 25%",
+        "dimension": "eggValueMult",
+        "tier": 0,
+        "priceStart": 0.009999999776482582,
+        "priceEnd": 2.5,
+        "pricePercent": 3
       }
     },
     {
@@ -27,10 +39,17 @@
       "target": "HatcheryRefillRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 15,
       "meta": {
         "epic": false,
         "name": "BETTER INCUBATORS",
-        "dimension": "hatcheryRefillRateMult"
+        "description": "Hatchery will 'refill' 10% faster",
+        "help": "The hatchery is full of baby chicks and is where chickens come from when you press the chicken button. It needs time to refill when you deplete it. This makes that happen faster.",
+        "dimension": "hatcheryRefillRateMult",
+        "tier": 0,
+        "priceStart": 0.10000000149011612,
+        "priceEnd": 1.100000023841858,
+        "pricePercent": 2
       }
     },
     {
@@ -38,10 +57,17 @@
       "target": "RunningChickenBonus",
       "combineMode": "Add",
       "magnitude": 0.001,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "EXCITABLE CHICKENS",
-        "dimension": "onscreenChickenMult"
+        "description": "+0.1% egg value bonus for each running chicken",
+        "help": "Your farm gets an earnings bonus for every chicken running to a hen house. This increases the bonus per chicken.",
+        "dimension": "onscreenChickenMult",
+        "tier": 0,
+        "priceStart": 0.004999999888241291,
+        "priceEnd": 4.5,
+        "pricePercent": 3
       }
     },
     {
@@ -49,10 +75,16 @@
       "target": "HabCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 8,
       "meta": {
         "epic": false,
         "name": "HEN HOUSE REMODEL",
-        "dimension": "habCapacityMult"
+        "description": "Increase capacity of all habs by 5%",
+        "dimension": "habCapacityMult",
+        "tier": 1,
+        "priceStart": 0.5,
+        "priceEnd": 1.399999976158142,
+        "pricePercent": 3
       }
     },
     {
@@ -60,10 +92,17 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 2,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "INTERNAL HATCHERIES",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Each hen house adds 2 additional chickens per minute",
+        "help": "Internal hatcheries produce chickens right inside your hen houses, even while you're away, no need to click. Note that the rate is per hen house.",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 1,
+        "priceStart": 0.5,
+        "priceEnd": 2.8,
+        "pricePercent": 10
       }
     },
     {
@@ -71,10 +110,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 30,
       "meta": {
         "epic": false,
         "name": "PADDED PACKAGING",
-        "dimension": "eggValueMult"
+        "description": "Increases earnings per egg by 25%",
+        "dimension": "eggValueMult",
+        "tier": 1,
+        "priceStart": 1.5,
+        "priceEnd": 3.5,
+        "pricePercent": 12
       }
     },
     {
@@ -82,10 +127,16 @@
       "target": "HatcheryCapacity",
       "combineMode": "Add",
       "magnitude": 10,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "HATCHERY EXPANSION",
-        "dimension": "hatcheryCapacity"
+        "description": "Increases Hatchery capacity by 10",
+        "dimension": "hatcheryCapacity",
+        "tier": 1,
+        "priceStart": 0.10000000149011612,
+        "priceEnd": 2.5,
+        "pricePercent": 8
       }
     },
     {
@@ -93,10 +144,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 1,
+      "maxLevel": 1,
       "meta": {
         "epic": false,
         "name": "BIGGER EGGS",
-        "dimension": "eggValueMult"
+        "description": "DOUBLES egg value",
+        "dimension": "eggValueMult",
+        "tier": 1,
+        "priceStart": 1.2999999523162842,
+        "priceEnd": 1.2999999523162842,
+        "pricePercent": 100
       }
     },
     {
@@ -104,10 +161,16 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 5,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "INTERNAL HATCHERY UPGRADES",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Each hen house adds an additional 5 chickens/min",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 2,
+        "priceStart": 2.0999999046325684,
+        "priceEnd": 5.199999809265137,
+        "pricePercent": 20
       }
     },
     {
@@ -115,10 +178,16 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 30,
       "meta": {
         "epic": false,
         "name": "IMPROVED LEAFSPRINGS",
-        "dimension": "vehicleCapacityMult"
+        "description": "Increase vehicle capacity by 5%",
+        "dimension": "vehicleCapacityMult",
+        "tier": 2,
+        "priceStart": 2.0999999046325684,
+        "priceEnd": 4.800000190734863,
+        "pricePercent": 4
       }
     },
     {
@@ -126,10 +195,16 @@
       "target": "FleetSize",
       "combineMode": "Add",
       "magnitude": 1,
+      "maxLevel": 2,
       "meta": {
         "epic": false,
         "name": "VEHICLE RELIABLITY",
-        "dimension": "maxFleetSize"
+        "description": "Increase fleet size by 1",
+        "dimension": "maxFleetSize",
+        "tier": 2,
+        "priceStart": 2.700000047683716,
+        "priceEnd": 5,
+        "pricePercent": 20
       }
     },
     {
@@ -137,10 +212,16 @@
       "target": "HatcheryRefillRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "ROOSTER BOOSTER",
-        "dimension": "hatcheryRefillRateMult"
+        "description": "Hatchery will 'refill' 5% faster",
+        "dimension": "hatcheryRefillRateMult",
+        "tier": 2,
+        "priceStart": 2.0999999046325684,
+        "priceEnd": 5.599999904632568,
+        "pricePercent": 5
       }
     },
     {
@@ -148,10 +229,16 @@
       "target": "RunningChickenBonusCap",
       "combineMode": "Add",
       "magnitude": 0.2,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "COORDINATED CLUCKING",
-        "dimension": "onscreenChickenMultMaxBase"
+        "description": "Max running chicken bonus increased by 0.2×",
+        "dimension": "onscreenChickenMultMaxBase",
+        "tier": 2,
+        "priceStart": 1.5,
+        "priceEnd": 5,
+        "pricePercent": 15
       }
     },
     {
@@ -159,10 +246,16 @@
       "target": "HatcheryCapacity",
       "combineMode": "Add",
       "magnitude": 50,
+      "maxLevel": 1,
       "meta": {
         "epic": false,
         "name": "HATCHERY REBUILD",
-        "dimension": "hatcheryCapacity"
+        "description": "Increases Hatchery capacity by 50",
+        "dimension": "hatcheryCapacity",
+        "tier": 3,
+        "priceStart": 3.799999952316284,
+        "priceEnd": 3.799999952316284,
+        "pricePercent": 50
       }
     },
     {
@@ -170,10 +263,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 2,
+      "maxLevel": 1,
       "meta": {
         "epic": false,
         "name": "USDE PRIME CERTIFICATION",
-        "dimension": "eggValueMult"
+        "description": "TRIPLES egg value",
+        "dimension": "eggValueMult",
+        "tier": 3,
+        "priceStart": 4.5,
+        "priceEnd": 4.5,
+        "pricePercent": 280
       }
     },
     {
@@ -181,10 +280,16 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "HEN HOUSE A/C",
-        "dimension": "eggLayingRateMult"
+        "description": "Increase egg laying rate by 5%",
+        "dimension": "eggLayingRateMult",
+        "tier": 3,
+        "priceStart": 2.5,
+        "priceEnd": 5.5,
+        "pricePercent": 0.5
       }
     },
     {
@@ -192,10 +297,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 35,
       "meta": {
         "epic": false,
         "name": "$SUPER-FEED™ DIET",
-        "dimension": "eggValueMult"
+        "description": "Increase egg value by 25%.",
+        "dimension": "eggValueMult",
+        "tier": 3,
+        "priceStart": 2.9000000953674316,
+        "priceEnd": 5.199999809265137,
+        "pricePercent": 12.1
       }
     },
     {
@@ -203,10 +314,16 @@
       "target": "HabCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "MICROLUX™ CHICKEN SUITES",
-        "dimension": "habCapacityMult"
+        "description": "Increase capacity of all habs by 5%",
+        "dimension": "habCapacityMult",
+        "tier": 3,
+        "priceStart": 3.5,
+        "priceEnd": 5.199999809265137,
+        "pricePercent": 0.8
       }
     },
     {
@@ -214,10 +331,16 @@
       "target": "HatcheryCapacity",
       "combineMode": "Add",
       "magnitude": 10,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "COMPACT INCUBATORS",
-        "dimension": "hatcheryCapacity"
+        "description": ")",
+        "dimension": "hatcheryCapacity",
+        "tier": 4,
+        "priceStart": 3.0999999046325684,
+        "priceEnd": 6.5,
+        "pricePercent": 20
       }
     },
     {
@@ -225,10 +348,70 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 40,
       "meta": {
         "epic": false,
         "name": "LIGHTWEIGHT BOXES",
-        "dimension": "vehicleCapacityMult"
+        "description": "Increase vehicle capacity by 10%",
+        "dimension": "vehicleCapacityMult",
+        "tier": 4,
+        "priceStart": 4.5,
+        "priceEnd": 7.199999809265137,
+        "pricePercent": 6
+      }
+    },
+    {
+      "id": "excoskeletons:maxFleetSize",
+      "target": "FleetSize",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "DEPOT WORKER EXOSKELETONS",
+        "description": "Increase maximum fleet size by 1",
+        "dimension": "maxFleetSize",
+        "tier": 4,
+        "research": "excoskeletons",
+        "priceStart": 4.300000190734863,
+        "priceEnd": 7.099999904632568,
+        "pricePercent": 20
+      }
+    },
+    {
+      "id": "excoskeletons:vehicleRoundTripTimeMult",
+      "target": "VehicleRoundTripTime",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "DEPOT WORKER EXOSKELETONS",
+        "description": "Increase maximum fleet size by 1",
+        "dimension": "vehicleRoundTripTimeMult",
+        "tier": 4,
+        "research": "excoskeletons",
+        "priceStart": 4.300000190734863,
+        "priceEnd": 7.099999904632568,
+        "pricePercent": 20
+      }
+    },
+    {
+      "id": "excoskeletons:vehicleLoadingTimeMult",
+      "target": "VehicleLoadingTime",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "DEPOT WORKER EXOSKELETONS",
+        "description": "Increase maximum fleet size by 1",
+        "dimension": "vehicleLoadingTimeMult",
+        "tier": 4,
+        "research": "excoskeletons",
+        "priceStart": 4.300000190734863,
+        "priceEnd": 7.099999904632568,
+        "pricePercent": 20
       }
     },
     {
@@ -236,10 +419,88 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 10,
+      "maxLevel": 15,
       "meta": {
         "epic": false,
         "name": "INTERNAL HATCHERY EXPANSION",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Each hen house adds an additional 10 chickens/min",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 4,
+        "priceStart": 4.5,
+        "priceEnd": 7.300000190734863,
+        "pricePercent": 25
+      }
+    },
+    {
+      "id": "improved_genetics:eggLayingRateMult",
+      "target": "EggLayingRate",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.15,
+      "maxLevel": 30,
+      "meta": {
+        "epic": false,
+        "name": "IMPROVED GENETICS",
+        "description": "Increase egg laying rate AND egg value by 15%",
+        "dimension": "eggLayingRateMult",
+        "tier": 4,
+        "research": "improved_genetics",
+        "priceStart": 4.800000190734863,
+        "priceEnd": 7,
+        "pricePercent": 15
+      }
+    },
+    {
+      "id": "improved_genetics:eggValueMult",
+      "target": "EggValue",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.15,
+      "maxLevel": 30,
+      "meta": {
+        "epic": false,
+        "name": "IMPROVED GENETICS",
+        "description": "Increase egg laying rate AND egg value by 15%",
+        "dimension": "eggValueMult",
+        "tier": 4,
+        "research": "improved_genetics",
+        "priceStart": 4.800000190734863,
+        "priceEnd": 7,
+        "pricePercent": 15
+      }
+    },
+    {
+      "id": "traffic_management:maxFleetSize",
+      "target": "FleetSize",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "TRAFFIC MANAGEMENT",
+        "description": "Increase vehicle fleet size by 1",
+        "dimension": "maxFleetSize",
+        "tier": 5,
+        "research": "traffic_management",
+        "priceStart": 6.199999809265137,
+        "priceEnd": 8.300000190734863,
+        "pricePercent": 12
+      }
+    },
+    {
+      "id": "traffic_management:vehicleRoundTripTimeMult",
+      "target": "VehicleRoundTripTime",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "TRAFFIC MANAGEMENT",
+        "description": "Increase vehicle fleet size by 1",
+        "dimension": "vehicleRoundTripTimeMult",
+        "tier": 5,
+        "research": "traffic_management",
+        "priceStart": 6.199999809265137,
+        "priceEnd": 8.300000190734863,
+        "pricePercent": 12
       }
     },
     {
@@ -247,10 +508,54 @@
       "target": "RunningChickenBonusCap",
       "combineMode": "Add",
       "magnitude": 0.5,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "MOTIVATIONAL CLUCKING",
-        "dimension": "onscreenChickenMultMaxBase"
+        "description": "Max running chicken bonus increased by 0.5×",
+        "dimension": "onscreenChickenMultMaxBase",
+        "tier": 5,
+        "priceStart": 4,
+        "priceEnd": 11,
+        "pricePercent": 15
+      }
+    },
+    {
+      "id": "driver_training:vehicleSpeedMult",
+      "target": "VehicleSpeed",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.012,
+      "maxLevel": 30,
+      "meta": {
+        "epic": false,
+        "name": "DRIVER TRAINING",
+        "description": "Increase vehicle speed by 5%",
+        "help": "Vehicles that travel faster can deliver more eggs per minute. Speed upgrades are equivalent to capacity upgrades in their effect.",
+        "dimension": "vehicleSpeedMult",
+        "tier": 5,
+        "research": "driver_training",
+        "priceStart": 6.5,
+        "priceEnd": 8.699999809265137,
+        "pricePercent": 6
+      }
+    },
+    {
+      "id": "driver_training:vehicleCapacityMult",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "maxLevel": 30,
+      "meta": {
+        "epic": false,
+        "name": "DRIVER TRAINING",
+        "description": "Increase vehicle speed by 5%",
+        "help": "Vehicles that travel faster can deliver more eggs per minute. Speed upgrades are equivalent to capacity upgrades in their effect.",
+        "dimension": "vehicleCapacityMult",
+        "tier": 5,
+        "research": "driver_training",
+        "priceStart": 6.5,
+        "priceEnd": 8.699999809265137,
+        "pricePercent": 6
       }
     },
     {
@@ -258,10 +563,52 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.15,
+      "maxLevel": 60,
       "meta": {
         "epic": false,
         "name": "SHELL FORTIFICATION",
-        "dimension": "eggValueMult"
+        "description": "Increase egg value by 15%",
+        "dimension": "eggValueMult",
+        "tier": 5,
+        "priceStart": 6.400000095367432,
+        "priceEnd": 9.399999618530273,
+        "pricePercent": 12.5
+      }
+    },
+    {
+      "id": "egg_loading_bots:maxFleetSize",
+      "target": "FleetSize",
+      "combineMode": "Add",
+      "magnitude": 1,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "EGG LOADING BOTS",
+        "description": "!",
+        "dimension": "maxFleetSize",
+        "tier": 6,
+        "research": "egg_loading_bots",
+        "priceStart": 9,
+        "priceEnd": 11.100000381469727,
+        "pricePercent": 12
+      }
+    },
+    {
+      "id": "egg_loading_bots:vehicleLoadingTimeMult",
+      "target": "VehicleLoadingTime",
+      "combineMode": "MulPlusOne",
+      "magnitude": -0.08,
+      "maxLevel": 2,
+      "meta": {
+        "epic": false,
+        "name": "EGG LOADING BOTS",
+        "description": "!",
+        "dimension": "vehicleLoadingTimeMult",
+        "tier": 6,
+        "research": "egg_loading_bots",
+        "priceStart": 9,
+        "priceEnd": 11.100000381469727,
+        "pricePercent": 12
       }
     },
     {
@@ -269,10 +616,33 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "SUPER ALLOY FRAMES",
-        "dimension": "vehicleCapacityMult"
+        "description": ")",
+        "dimension": "vehicleCapacityMult",
+        "tier": 6,
+        "priceStart": 8.399999618530273,
+        "priceEnd": 11.100000381469727,
+        "pricePercent": 8
+      }
+    },
+    {
+      "id": "even_bigger_eggs",
+      "target": "EggValue",
+      "combineMode": "Pow",
+      "magnitude": 2,
+      "maxLevel": 5,
+      "meta": {
+        "epic": false,
+        "name": "EVEN BIGGER EGGS",
+        "description": "DOUBLES egg value.",
+        "dimension": "eggValueMult",
+        "tier": 6,
+        "priceStart": 7.5,
+        "priceEnd": 12.699999809265137,
+        "pricePercent": 120
       }
     },
     {
@@ -280,10 +650,16 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 25,
+      "maxLevel": 30,
       "meta": {
         "epic": false,
         "name": "INTERNAL HATCHERY EXPANSION",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Each hen house adds an additional 25 chickens/min",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 6,
+        "priceStart": 6.900000095367432,
+        "priceEnd": 11.5,
+        "pricePercent": 25
       }
     },
     {
@@ -291,10 +667,16 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 20,
       "meta": {
         "epic": false,
         "name": "QUANTUM EGG STORAGE",
-        "dimension": "vehicleCapacityMult"
+        "description": ")",
+        "dimension": "vehicleCapacityMult",
+        "tier": 7,
+        "priceStart": 10.199999809265137,
+        "priceEnd": 15.100000381469727,
+        "pricePercent": 5
       }
     },
     {
@@ -302,10 +684,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 100,
       "meta": {
         "epic": false,
         "name": "GENETIC PURIFICATION",
-        "dimension": "eggValueMult"
+        "description": "Increases egg value by 10%",
+        "dimension": "eggValueMult",
+        "tier": 7,
+        "priceStart": 8.300000190734863,
+        "priceEnd": 15.600000381469727,
+        "pricePercent": 10
       }
     },
     {
@@ -313,10 +701,16 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 5,
+      "maxLevel": 250,
       "meta": {
         "epic": false,
         "name": "MACHINE LEARNING INCUBATORS",
-        "dimension": "internalHatcheryRateBase"
+        "description": "9",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 7,
+        "priceStart": 9.899999618530273,
+        "priceEnd": 15.300000190734863,
+        "pricePercent": 6
       }
     },
     {
@@ -324,10 +718,16 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 20,
       "meta": {
         "epic": false,
         "name": "TIME COMPRESSION",
-        "dimension": "eggLayingRateMult"
+        "description": ")",
+        "dimension": "eggLayingRateMult",
+        "tier": 7,
+        "priceStart": 9.600000381469727,
+        "priceEnd": 14.5,
+        "pricePercent": 6
       }
     },
     {
@@ -335,10 +735,33 @@
       "target": "HoverVehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "HOVER UPGRADES",
-        "dimension": "vehicleCapacityMultHover"
+        "description": "Increase hover vehicle capacity by 5%",
+        "dimension": "vehicleCapacityMultHover",
+        "tier": 8,
+        "priceStart": 11.800000190734863,
+        "priceEnd": 16.799999237060547,
+        "pricePercent": 6
+      }
+    },
+    {
+      "id": "graviton_coating",
+      "target": "EggValue",
+      "combineMode": "Pow",
+      "magnitude": 2,
+      "maxLevel": 7,
+      "meta": {
+        "epic": false,
+        "name": "GRAVITON COATING",
+        "description": "DOUBLES egg density and thus egg value",
+        "dimension": "eggValueMult",
+        "tier": 8,
+        "priceStart": 12,
+        "priceEnd": 19.5,
+        "pricePercent": 150
       }
     },
     {
@@ -346,10 +769,16 @@
       "target": "HabCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.02,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "GRAV PLATING",
-        "dimension": "habCapacityMult"
+        "description": "Increase capacity of all habs by 2%",
+        "dimension": "habCapacityMult",
+        "tier": 8,
+        "priceStart": 13.800000190734863,
+        "priceEnd": 16.5,
+        "pricePercent": 10
       }
     },
     {
@@ -357,10 +786,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 100,
       "meta": {
         "epic": false,
         "name": "CRYSTALLINE SHELLING",
-        "dimension": "eggValueMult"
+        "description": "Increases egg value by 25%",
+        "dimension": "eggValueMult",
+        "tier": 8,
+        "priceStart": 12.5,
+        "priceEnd": 18,
+        "pricePercent": 45
       }
     },
     {
@@ -368,10 +803,16 @@
       "target": "FleetSize",
       "combineMode": "Add",
       "magnitude": 1,
+      "maxLevel": 5,
       "meta": {
         "epic": false,
         "name": "AUTONOMOUS VEHICLES",
-        "dimension": "maxFleetSize"
+        "description": "!",
+        "dimension": "maxFleetSize",
+        "tier": 9,
+        "priceStart": 14.300000190734863,
+        "priceEnd": 18.5,
+        "pricePercent": 20
       }
     },
     {
@@ -379,10 +820,16 @@
       "target": "IHRBase",
       "combineMode": "Add",
       "magnitude": 50,
+      "maxLevel": 30,
       "meta": {
         "epic": false,
         "name": "NEURAL LINKING",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Each hen house adds an additional 50 chickens/min",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 9,
+        "priceStart": 11,
+        "priceEnd": 25.5,
+        "pricePercent": 150
       }
     },
     {
@@ -390,10 +837,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "TELEPATHIC WILL",
-        "dimension": "eggValueMult"
+        "description": "Increases egg quality (value) by 25%",
+        "dimension": "eggValueMult",
+        "tier": 9,
+        "priceStart": 16,
+        "priceEnd": 21,
+        "pricePercent": 60
       }
     },
     {
@@ -401,10 +854,16 @@
       "target": "RunningChickenBonusCap",
       "combineMode": "Add",
       "magnitude": 2,
+      "maxLevel": 150,
       "meta": {
         "epic": false,
         "name": "ENLIGHTENED CHICKENS",
-        "dimension": "onscreenChickenMultMaxBase"
+        "description": "Increase max running chicken bonus by 2.0×!",
+        "dimension": "onscreenChickenMultMaxBase",
+        "tier": 9,
+        "priceStart": 18,
+        "priceEnd": 30,
+        "pricePercent": 30
       }
     },
     {
@@ -412,10 +871,16 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "DARK CONTAINMENT",
-        "dimension": "vehicleCapacityMult"
+        "description": ")",
+        "dimension": "vehicleCapacityMult",
+        "tier": 10,
+        "priceStart": 16.5,
+        "priceEnd": 25.799999237060547,
+        "pricePercent": 6
       }
     },
     {
@@ -423,10 +888,33 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "ATOMIC PURIFICATION",
-        "dimension": "eggValueMult"
+        "description": "Increases egg value by 10%",
+        "dimension": "eggValueMult",
+        "tier": 10,
+        "priceStart": 20.5,
+        "priceEnd": 28,
+        "pricePercent": 25
+      }
+    },
+    {
+      "id": "multi_layering",
+      "target": "EggValue",
+      "combineMode": "Pow",
+      "magnitude": 10,
+      "maxLevel": 3,
+      "meta": {
+        "epic": false,
+        "name": "MULTIVERSAL LAYERING",
+        "description": "$10× egg value",
+        "dimension": "eggValueMult",
+        "tier": 10,
+        "priceStart": 23,
+        "priceEnd": 30,
+        "pricePercent": 250
       }
     },
     {
@@ -434,10 +922,16 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.02,
+      "maxLevel": 50,
       "meta": {
         "epic": false,
         "name": "TIMELINE DIVERSION",
-        "dimension": "eggLayingRateMult"
+        "description": "Increase egg laying rate by 2%",
+        "dimension": "eggLayingRateMult",
+        "tier": 10,
+        "priceStart": 20.200000762939453,
+        "priceEnd": 27.5,
+        "pricePercent": 5
       }
     },
     {
@@ -445,10 +939,16 @@
       "target": "PortalHabCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.02,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "WORMHOLE DAMPENING",
-        "dimension": "portalCapacityMult"
+        "description": "Increase capacity of portal habs by 2%",
+        "dimension": "portalCapacityMult",
+        "tier": 11,
+        "priceStart": 22.799999237060547,
+        "priceEnd": 29.5,
+        "pricePercent": 25
       }
     },
     {
@@ -456,10 +956,16 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 100,
       "meta": {
         "epic": false,
         "name": "EGGSISTOR MINIATURIZATION",
-        "dimension": "eggValueMult"
+        "description": "Increase egg value by 5%.",
+        "dimension": "eggValueMult",
+        "tier": 11,
+        "priceStart": 23,
+        "priceEnd": 30.5,
+        "pricePercent": 20
       }
     },
     {
@@ -467,10 +973,52 @@
       "target": "HyperloopTrainLength",
       "combineMode": "Add",
       "magnitude": 1,
+      "maxLevel": 5,
       "meta": {
         "epic": false,
         "name": "GRAVITON COUPLING",
-        "dimension": "hyperloopMaxTrainLength"
+        "description": "Increase max hyperloop train length by 1.",
+        "dimension": "hyperloopMaxTrainLength",
+        "tier": 11,
+        "priceStart": 20,
+        "priceEnd": 31.5,
+        "pricePercent": 20
+      }
+    },
+    {
+      "id": "neural_net_refine:vehicleSpeedMult",
+      "target": "VehicleSpeed",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.012,
+      "maxLevel": 25,
+      "meta": {
+        "epic": false,
+        "name": "NEURAL NET REFINEMENT",
+        "description": ")",
+        "dimension": "vehicleSpeedMult",
+        "tier": 11,
+        "research": "neural_net_refine",
+        "priceStart": 20.5,
+        "priceEnd": 30.700000762939453,
+        "pricePercent": 15
+      }
+    },
+    {
+      "id": "neural_net_refine:vehicleCapacityMult",
+      "target": "VehicleCapacity",
+      "combineMode": "MulPlusOne",
+      "magnitude": 0.05,
+      "maxLevel": 25,
+      "meta": {
+        "epic": false,
+        "name": "NEURAL NET REFINEMENT",
+        "description": ")",
+        "dimension": "vehicleCapacityMult",
+        "tier": 11,
+        "research": "neural_net_refine",
+        "priceStart": 20.5,
+        "priceEnd": 30.700000762939453,
+        "pricePercent": 15
       }
     },
     {
@@ -478,10 +1026,33 @@
       "target": "EggValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.01,
+      "maxLevel": 500,
       "meta": {
         "epic": false,
         "name": "MATTER RECONFIGURATION",
-        "dimension": "eggValueMult"
+        "description": "Increase egg value by 1%.",
+        "dimension": "eggValueMult",
+        "tier": 12,
+        "priceStart": 25,
+        "priceEnd": 32.5,
+        "pricePercent": 3
+      }
+    },
+    {
+      "id": "timeline_splicing",
+      "target": "EggValue",
+      "combineMode": "Pow",
+      "magnitude": 10,
+      "maxLevel": 1,
+      "meta": {
+        "epic": false,
+        "name": "TIMELINE SPLICING",
+        "description": "&10× egg value.",
+        "dimension": "eggValueMult",
+        "tier": 12,
+        "priceStart": 32,
+        "priceEnd": 32,
+        "pricePercent": 200
       }
     },
     {
@@ -489,10 +1060,16 @@
       "target": "HyperloopCarCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 25,
       "meta": {
         "epic": false,
         "name": "HYPER PORTALLING",
-        "dimension": "hyperloopCarCapacityMult"
+        "description": "Increase hyperloop car capacity by 5%",
+        "dimension": "hyperloopCarCapacityMult",
+        "tier": 12,
+        "priceStart": 26.799999237060547,
+        "priceEnd": 31.799999237060547,
+        "pricePercent": 60
       }
     },
     {
@@ -500,10 +1077,16 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 10,
       "meta": {
         "epic": false,
         "name": "RELATIVITY OPTIMIZATION",
-        "dimension": "eggLayingRateMult"
+        "description": ")",
+        "dimension": "eggLayingRateMult",
+        "tier": 12,
+        "priceStart": 26.200000762939453,
+        "priceEnd": 31.5,
+        "pricePercent": 15
       }
     },
     {
@@ -511,10 +1094,15 @@
       "target": "HoldToHatchRate",
       "combineMode": "Add",
       "magnitude": 2,
+      "maxLevel": 15,
       "meta": {
         "epic": true,
         "name": "HOLD TO HATCH",
-        "dimension": "holdToHatchRate"
+        "description": "Hold chicken button +2 chickens per second",
+        "dimension": "holdToHatchRate",
+        "tier": 0,
+        "epicPriceStart": 10,
+        "epicPriceEnd": 500
       }
     },
     {
@@ -522,10 +1110,16 @@
       "target": "HatcheryRefillRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "EPIC HATCHERY",
-        "dimension": "hatcheryRefillRateMult"
+        "description": "Increase hatchery refill rate by 10%",
+        "help": "The hatchery is where chickens come from when you press the chicken button. This affects the rate at which it refills after you deplete it.",
+        "dimension": "hatcheryRefillRateMult",
+        "tier": 0,
+        "epicPriceStart": 2,
+        "epicPriceEnd": 1000
       }
     },
     {
@@ -533,10 +1127,16 @@
       "target": "IHRBase",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "EPIC INT. HATCHERIES",
-        "dimension": "internalHatcheryRateBase"
+        "description": "Increase internal hatchery rate by 5%",
+        "help": "Internal hatcheries generate chickens inside each of your hen houses. This epic research will multiply the effects of the common research.",
+        "dimension": "internalHatcheryRateBase",
+        "tier": 1,
+        "epicPriceStart": 50,
+        "epicPriceEnd": 10000
       }
     },
     {
@@ -544,10 +1144,15 @@
       "target": "VideoDoublerTime",
       "combineMode": "Add",
       "magnitude": 0.5,
+      "maxLevel": 12,
       "meta": {
         "epic": true,
         "name": "VIDEO DOUBLER TIME",
-        "dimension": "videoDoublerHours"
+        "description": "Increase video doubler time by 30 min.",
+        "dimension": "videoDoublerHours",
+        "tier": 3,
+        "epicPriceStart": 100,
+        "epicPriceEnd": 5000
       }
     },
     {
@@ -555,10 +1160,16 @@
       "target": "RunningChickenBonus",
       "combineMode": "Add",
       "magnitude": 0.001,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "EPIC CLUCKING",
-        "dimension": "onscreenChickenMult"
+        "description": "+0.1% egg value bonus for each running chicken.",
+        "help": "Your farm gets an earnings bonus for each chicken running. This will increase that bonus per chicken, it will not increase the MAX cap for the bonus.",
+        "dimension": "onscreenChickenMult",
+        "tier": 2,
+        "epicPriceStart": 100,
+        "epicPriceEnd": 10000
       }
     },
     {
@@ -566,10 +1177,16 @@
       "target": "RunningChickenBonusCap",
       "combineMode": "Add",
       "magnitude": 2,
+      "maxLevel": 100,
       "meta": {
         "epic": true,
         "name": "EPIC MULTIPLIER",
-        "dimension": "onscreenChickenMultMaxBase"
+        "description": "9",
+        "help": "Your farm gets an earnings bonus for every chicken running to a hen house. This increases the cap for that bonus.",
+        "dimension": "onscreenChickenMultMaxBase",
+        "tier": 2,
+        "epicPriceStart": 50,
+        "epicPriceEnd": 10000
       }
     },
     {
@@ -577,10 +1194,15 @@
       "target": "HabCost",
       "combineMode": "MulPlusOne",
       "magnitude": -0.05,
+      "maxLevel": 10,
       "meta": {
         "epic": true,
         "name": "CHEAPER CONTRACTORS",
-        "dimension": "habCostMult"
+        "description": "Reduce hen house build costs by 5%",
+        "dimension": "habCostMult",
+        "tier": 1,
+        "epicPriceStart": 50,
+        "epicPriceEnd": 4000
       }
     },
     {
@@ -588,10 +1210,15 @@
       "target": "VehicleCost",
       "combineMode": "MulPlusOne",
       "magnitude": -0.05,
+      "maxLevel": 10,
       "meta": {
         "epic": true,
         "name": "BUST UNIONS",
-        "dimension": "vehicleCostMult"
+        "description": "Reduce vehicle hire costs by 5%",
+        "dimension": "vehicleCostMult",
+        "tier": 1,
+        "epicPriceStart": 50,
+        "epicPriceEnd": 4000
       }
     },
     {
@@ -599,10 +1226,15 @@
       "target": "ResearchCost",
       "combineMode": "MulPlusOne",
       "magnitude": -0.05,
+      "maxLevel": 10,
       "meta": {
         "epic": true,
         "name": "LAB UPGRADE",
-        "dimension": "researchCostMult"
+        "description": "Reduce research costs by 5%",
+        "dimension": "researchCostMult",
+        "tier": 1,
+        "epicPriceStart": 100,
+        "epicPriceEnd": 8000
       }
     },
     {
@@ -610,10 +1242,15 @@
       "target": "SiloTime",
       "combineMode": "Add",
       "magnitude": 360,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "SILO CAPACITY",
-        "dimension": "siloSeconds"
+        "description": "Increase away time per silo by 6 min",
+        "dimension": "siloSeconds",
+        "tier": 0,
+        "epicPriceStart": 5,
+        "epicPriceEnd": 2000
       }
     },
     {
@@ -621,10 +1258,15 @@
       "target": "IHRSharing",
       "combineMode": "Add",
       "magnitude": 0.1,
+      "maxLevel": 10,
       "meta": {
         "epic": true,
         "name": "INTERNAL HATCHERY SHARING",
-        "dimension": "internalHatcherySharing"
+        "description": "Full habs' internal hatcheries send +10% chicks to other habs",
+        "dimension": "internalHatcherySharing",
+        "tier": 4,
+        "epicPriceStart": 100,
+        "epicPriceEnd": 2500
       }
     },
     {
@@ -632,10 +1274,15 @@
       "target": "IHROffline",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "INTERNAL HATCHERY CALM",
-        "dimension": "internalHatcheryMultAway"
+        "description": "Increase internal hatchery rate by 10% while away",
+        "dimension": "internalHatcheryMultAway",
+        "tier": 3,
+        "epicPriceStart": 250,
+        "epicPriceEnd": 10000
       }
     },
     {
@@ -643,10 +1290,15 @@
       "target": "FarmValue",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "ACCOUNTING TRICKS",
-        "dimension": "valuationMult"
+        "description": "Increase farm valuation by 5%",
+        "dimension": "valuationMult",
+        "tier": 0,
+        "epicPriceStart": 100,
+        "epicPriceEnd": 10000
       }
     },
     {
@@ -654,10 +1306,15 @@
       "target": "HoldToResearch",
       "combineMode": "MulPlusOne",
       "magnitude": 0.25,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "HOLD TO RESEARCH",
-        "dimension": "holdToResearchMult"
+        "description": "Increase repetition rate when holding down research button by +25%",
+        "dimension": "holdToResearchMult",
+        "tier": 4,
+        "epicPriceStart": 5000,
+        "epicPriceEnd": 20000
       }
     },
     {
@@ -665,10 +1322,15 @@
       "target": "SoulEggBonus",
       "combineMode": "Add",
       "magnitude": 0.01,
+      "maxLevel": 140,
       "meta": {
         "epic": true,
         "name": "SOUL FOOD",
-        "dimension": "soulEggBonus"
+        "description": "Increase bonus per soul egg by +1%",
+        "dimension": "soulEggBonus",
+        "tier": 3,
+        "epicPriceStart": 500,
+        "epicPriceEnd": 5000
       }
     },
     {
@@ -676,10 +1338,16 @@
       "target": "SoulEggCollectionRate",
       "combineMode": "Add",
       "magnitude": 0.1,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "PRESTIGE BONUS",
-        "dimension": "soulEggCollectionMult"
+        "description": "Earn +10% soul eggs when you prestige",
+        "help": "Increases soul eggs received from a prestige. This bonus is included in the number of unclaimed soul eggs shown on the prestige screen.",
+        "dimension": "soulEggCollectionMult",
+        "tier": 3,
+        "epicPriceStart": 2000,
+        "epicPriceEnd": 20000
       }
     },
     {
@@ -687,10 +1355,15 @@
       "target": "DroneRewardQuality",
       "combineMode": "MulPlusOne",
       "magnitude": 0.1,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "DRONE REWARDS",
-        "dimension": "droneRewardQualityMult"
+        "description": "Increase your chances for bigger drone rewards by 10%",
+        "dimension": "droneRewardQualityMult",
+        "tier": 2,
+        "epicPriceStart": 50,
+        "epicPriceEnd": 2000
       }
     },
     {
@@ -698,10 +1371,15 @@
       "target": "EggLayingRate",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 20,
       "meta": {
         "epic": true,
         "name": "EPIC COMFY NESTS",
-        "dimension": "eggLayingRateMult"
+        "description": "Increase egg laying rate by 5%.",
+        "dimension": "eggLayingRateMult",
+        "tier": 3,
+        "epicPriceStart": 250,
+        "epicPriceEnd": 50000
       }
     },
     {
@@ -709,10 +1387,15 @@
       "target": "VehicleCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 30,
       "meta": {
         "epic": true,
         "name": "TRANSPORTATION LOBBYISTS",
-        "dimension": "vehicleCapacityMult"
+        "description": "Increase vehicle capacity by 5%.",
+        "dimension": "vehicleCapacityMult",
+        "tier": 3,
+        "epicPriceStart": 250,
+        "epicPriceEnd": 5000
       }
     },
     {
@@ -720,10 +1403,15 @@
       "target": "ProphecyEggBonus",
       "combineMode": "Add",
       "magnitude": 0.01,
+      "maxLevel": 5,
       "meta": {
         "epic": true,
         "name": "PROPHECY BONUS",
-        "dimension": "eggOfProphecyBonus"
+        "description": "Increase bonus per egg of prophecy by +1% (compounding)",
+        "dimension": "eggOfProphecyBonus",
+        "tier": 4,
+        "epicPriceStart": 100000,
+        "epicPriceEnd": 1000000
       }
     },
     {
@@ -731,10 +1419,16 @@
       "target": "AfxMissionDuration",
       "combineMode": "MulPlusOne",
       "magnitude": -0.01,
+      "maxLevel": 60,
       "meta": {
         "epic": true,
         "name": "FTL DRIVE UPGRADES",
-        "dimension": "artifactsMissionFTLDurationResearchMult"
+        "description": "Reduce Artifact mission time of FTL ships by 1%",
+        "help": "Only affects ships with FTL drives (Quintillion Chicken or higher). Only applies to missions launched AFTER the research is completed",
+        "dimension": "artifactsMissionFTLDurationResearchMult",
+        "tier": 5,
+        "epicPriceStart": 5000,
+        "epicPriceEnd": 200000
       }
     },
     {
@@ -742,10 +1436,16 @@
       "target": "AfxMissionCapacity",
       "combineMode": "MulPlusOne",
       "magnitude": 0.05,
+      "maxLevel": 10,
       "meta": {
         "epic": true,
         "name": "ZERO-G QUANTUM CONTAINMENT",
-        "dimension": "artifactsMissionCapacityResearchMult"
+        "description": "Increase Artifact mission capacity by 5%",
+        "help": "Only applies to missions launched AFTER the research is completed",
+        "dimension": "artifactsMissionCapacityResearchMult",
+        "tier": 5,
+        "epicPriceStart": 50000,
+        "epicPriceEnd": 1000000
       }
     }
   ],
@@ -766,6 +1466,11 @@
       "method": "decoded"
     },
     "epic": {
+      "origin": "binary",
+      "locator": "researchdata",
+      "method": "decoded"
+    },
+    "price": {
       "origin": "binary",
       "locator": "researchdata",
       "method": "decoded"

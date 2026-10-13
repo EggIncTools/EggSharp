@@ -144,6 +144,11 @@
       "index": 28,
       "name": "PUMPKIN",
       "baseValue": 0.99
+    },
+    {
+      "index": 29,
+      "name": "CUSTOM",
+      "baseValue": 0.99
     }
   ],
   "binaryVersion": "1.37.2",
