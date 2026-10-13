@@ -10,10 +10,14 @@ public static class Families {
 public abstract class EffectFamily : IEffectFamily {
     private readonly Dictionary<string, Effect> _byId;
 
-    protected EffectFamily(string key, EffectDataFile file, EffectSchema? metaSchema) {
+    protected EffectFamily(string key, EffectDataFile file, EffectSchema? metaSchema, Action<Effect>? validate = null) {
         Key = key;
         MetaSchema = metaSchema;
         Effects = EffectDataLoader.ToEffects(key, file, metaSchema);
+        if (validate is not null) {
+            foreach (var effect in Effects)
+                validate(effect);
+        }
         BinaryVersion = file.BinaryVersion;
         Provenance = file.Provenance ?? GameData.Provenance.Empty;
         _byId = Effects.ToDictionary(e => e.Id, StringComparer.Ordinal);
@@ -43,7 +47,22 @@ public sealed class BoostFamily(EffectDataFile file) : EffectFamily(Families.Boo
     ]);
 }
 
-public sealed class ResearchFamily(EffectDataFile file) : EffectFamily(Families.Research, file, MetaSchemaDef) {
+public sealed class ResearchFamily(EffectDataFile file) : EffectFamily(Families.Research, file, MetaSchemaDef, ValidatePrices) {
+    public static double? Price(Effect research, int level) =>
+        research.TryMeta("prices", out var value) && value is IReadOnlyList<double> prices && level >= 1 && level <= prices.Count
+            ? prices[level - 1]
+            : null;
+
+    private static void ValidatePrices(Effect research) {
+        if (!research.TryMeta("prices", out var value))
+            return;
+        if (research.MaxLevel is not { } maxLevel)
+            throw new GameDataSchemaException($"Row '{research.Id}' has prices but no maxLevel.");
+        var count = ((IReadOnlyList<double>)value).Count;
+        if (count != maxLevel)
+            throw new GameDataSchemaException($"Row '{research.Id}' has {count} prices but maxLevel {maxLevel}.");
+    }
+
     private static readonly EffectSchema MetaSchemaDef = new([
         new EffectField("name", EffectFieldType.String, false),
         new EffectField("epic", EffectFieldType.Bool),
@@ -56,7 +75,8 @@ public sealed class ResearchFamily(EffectDataFile file) : EffectFamily(Families.
         new EffectField("priceEnd", EffectFieldType.Double, false),
         new EffectField("pricePercent", EffectFieldType.Double, false),
         new EffectField("epicPriceStart", EffectFieldType.Double, false),
-        new EffectField("epicPriceEnd", EffectFieldType.Double, false)
+        new EffectField("epicPriceEnd", EffectFieldType.Double, false),
+        new EffectField("prices", EffectFieldType.DoubleList, false)
     ]);
 }
 

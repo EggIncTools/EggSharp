@@ -253,6 +253,50 @@ public sealed class GameDataParsingTests {
         Assert.Contains("durationSeconds", ex.Message, StringComparison.Ordinal);
     }
 
+    private static ResearchFamily ResearchWith(string maxLevel, string prices) =>
+        new(EffectDataLoader.Parse($$"""
+            {
+              "binaryVersion": "test-1.0",
+              "rows": [
+                { "id": "res_p", "target": "IHR", "combineMode": "MulPlusOne", "magnitude": 0.05{{maxLevel}}, "meta": { "epic": false, "prices": {{prices}} } }
+              ]
+            }
+            """));
+
+    [Fact]
+    public void Research_prices_parse_and_Price_reads_one_based_levels() {
+        var research = ResearchWith(""", "maxLevel": 3""", "[100, 250.5, 1000]").Find("res_p");
+        Assert.NotNull(research);
+        Assert.Equal([100, 250.5, 1000], research.MetaDoubles("prices"));
+        Assert.Equal(100, ResearchFamily.Price(research, 1));
+        Assert.Equal(1000, ResearchFamily.Price(research, 3));
+        Assert.Null(ResearchFamily.Price(research, 0));
+        Assert.Null(ResearchFamily.Price(research, 4));
+    }
+
+    [Fact]
+    public void Research_Price_is_null_without_prices() {
+        var research = new ResearchFamily(EffectDataLoader.Parse(ResearchJson)).Find("res_a");
+        Assert.NotNull(research);
+        Assert.Null(ResearchFamily.Price(research, 1));
+    }
+
+    [Fact]
+    public void Research_prices_length_mismatch_throws_naming_the_row() {
+        var ex = Assert.Throws<GameDataSchemaException>(() => ResearchWith(""", "maxLevel": 2""", "[100, 250, 1000]"));
+        Assert.Contains("res_p", ex.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void Research_prices_without_maxLevel_throws_naming_the_row() {
+        var ex = Assert.Throws<GameDataSchemaException>(() => ResearchWith("", "[100, 250, 1000]"));
+        Assert.Contains("res_p", ex.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void Research_prices_with_non_numeric_element_throws() =>
+        Assert.Throws<GameDataSchemaException>(() => ResearchWith(""", "maxLevel": 2""", """[100, "x"]"""));
+
     [Fact]
     public void EggCatalog_rejects_invalid_json() =>
         Assert.Throws<GameDataSchemaException>(() => EggCatalog.Parse("not json"));

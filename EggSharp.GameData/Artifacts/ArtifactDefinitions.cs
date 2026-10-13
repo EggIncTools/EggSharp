@@ -27,6 +27,8 @@ public static class ArtifactDefinitions {
 
     public static string? DimensionLabel(int dimension) => Labels.GetValueOrDefault(dimension);
 
+    public static string? Label(string name) => Find(name) is { } family ? FamilyLabel(family) : null;
+
     public static string EffectTemplate => Loaded.Value.Template;
 
     public static ArtifactEffect? Effect(string name, int level, int rarity) =>
@@ -36,8 +38,12 @@ public static class ArtifactDefinitions {
         if (Find(name) is not { } family || Effect(name, level, rarity) is not { } effect)
             return null;
         var template = effect.Template.Length > 0 ? effect.Template : EffectTemplate;
-        return ArtifactEffects.Render(template, family.Dimension, effect.Magnitude, DimensionLabel, currency);
+        return ArtifactEffects.Render(template, family.Dimension, effect.Magnitude,
+            d => d == family.Dimension ? FamilyLabel(family) : DimensionLabel(d), currency);
     }
+
+    private static string? FamilyLabel(ArtifactFamily family) =>
+        string.IsNullOrEmpty(family.Label) ? DimensionLabel(family.Dimension) : family.Label;
 
     public static string? EffectText(string name, int level, int rarity, string currency = ArtifactEffects.DefaultCurrency) =>
         EffectMarkup(name, level, rarity, currency) is { } markup ? ArtifactEffects.Plain(markup) : null;

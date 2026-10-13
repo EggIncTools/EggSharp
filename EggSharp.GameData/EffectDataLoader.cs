@@ -64,10 +64,18 @@ public static class EffectDataLoader {
                 JsonValueKind.Number => element.TryGetInt64(out var l) ? l : element.GetDouble(),
                 JsonValueKind.True => true,
                 JsonValueKind.False => false,
+                JsonValueKind.Array => ConvertDoubles(key, element),
                 _ => throw new GameDataSchemaException($"Unsupported meta value for '{key}': {element.ValueKind}.")
             };
         }
 
         return result;
     }
+
+    private static double[] ConvertDoubles(string key, JsonElement array) =>
+        [
+            .. array.EnumerateArray().Select(e => e.ValueKind == JsonValueKind.Number
+                ? e.GetDouble()
+                : throw new GameDataSchemaException($"Unsupported meta array element for '{key}': {e.ValueKind}."))
+        ];
 }

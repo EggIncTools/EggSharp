@@ -63,6 +63,30 @@ public sealed class ArtifactDefinitionsTests {
     }
 
     [Fact]
+    public void Parse_ReadsFamilyLabel() {
+        var parsed = ArtifactDefinitions.Parse(
+            """{"families":[{"name":"LUNAR_TOTEM","afxId":0,"binaryId":"lunar_totem","pluralName":"LUNAR TOTEMS","kind":0,"dimension":3,"order":0,"description":"","label":"offline earnings","tiers":[]}],"dimensionLabels":{"3":"away earnings"},"effectTemplate":"","binaryVersion":"1.0"}""");
+        Assert.Equal("offline earnings", Assert.Single(parsed.Families).Label);
+    }
+
+    [Fact]
+    public void Label_FallsBackToDimensionLabelWithoutOverride() =>
+        Assert.Equal(ArtifactDefinitions.DimensionLabel(3), ArtifactDefinitions.Label("LUNAR_TOTEM"));
+
+    [Fact]
+    public void Label_IsNullForUnknownFamily() => Assert.Null(ArtifactDefinitions.Label("NOT_A_FAMILY"));
+
+    [Fact]
+    public void Fingerprint_ChangesWithFamilyLabel() {
+        var plain = ArtifactDefinitions.Parse(
+            """{"families":[{"name":"LUNAR_TOTEM","afxId":0,"binaryId":"lunar_totem","pluralName":"LUNAR TOTEMS","kind":0,"dimension":3,"order":0,"description":"","tiers":[]}],"dimensionLabels":{"3":"away earnings"},"effectTemplate":"","binaryVersion":"1.0"}""");
+        var labelled = ArtifactDefinitions.Parse(
+            """{"families":[{"name":"LUNAR_TOTEM","afxId":0,"binaryId":"lunar_totem","pluralName":"LUNAR TOTEMS","kind":0,"dimension":3,"order":0,"description":"","label":"offline earnings","tiers":[]}],"dimensionLabels":{"3":"away earnings"},"effectTemplate":"","binaryVersion":"1.0"}""");
+        Assert.NotEqual(ArtifactDefinitions.Fingerprint(plain.Families, plain.Labels),
+            ArtifactDefinitions.Fingerprint(labelled.Families, labelled.Labels));
+    }
+
+    [Fact]
     public void Fingerprint_RoundTripsThroughParse() {
         var parsed = ArtifactDefinitions.Parse(
             """{"families":[{"name":"LUNAR_TOTEM","afxId":0,"binaryId":"lunar_totem","pluralName":"LUNAR TOTEMS","kind":0,"dimension":3,"order":0,"description":"","tiers":[]}],"dimensionLabels":{"3":"away earnings"},"effectTemplate":"","binaryVersion":"1.0"}""");

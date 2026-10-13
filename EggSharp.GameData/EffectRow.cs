@@ -43,6 +43,7 @@ public sealed class EffectRow {
         EffectFieldType.Int => value is int or long || (value is double d && d == Math.Floor(d)),
         EffectFieldType.String => value is string,
         EffectFieldType.Bool => value is bool,
+        EffectFieldType.DoubleList => value is IReadOnlyList<double>,
         _ => false
     };
 }

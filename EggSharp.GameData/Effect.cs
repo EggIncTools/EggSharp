@@ -43,5 +43,6 @@ public sealed record Effect {
     public int MetaInt(string field) => Convert.ToInt32(Meta[field]);
     public string MetaString(string field) => (string)Meta[field];
     public bool MetaBool(string field) => (bool)Meta[field];
+    public IReadOnlyList<double> MetaDoubles(string field) => (IReadOnlyList<double>)Meta[field];
     public bool TryMeta(string field, [MaybeNullWhen(false)] out object value) => Meta.TryGetValue(field, out value);
 }

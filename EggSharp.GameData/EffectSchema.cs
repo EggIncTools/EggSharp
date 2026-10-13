@@ -6,7 +6,8 @@ public enum EffectFieldType {
     Double,
     Int,
     String,
-    Bool
+    Bool,
+    DoubleList
 }
 
 public sealed record EffectField(string Name, EffectFieldType Type, bool Required = true);
