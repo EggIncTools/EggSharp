@@ -32,7 +32,7 @@ jobs:
       PACKAGES_PAT: ${{ secrets.PACKAGES_PAT }}
 
   pack:
-    needs: [identity, test]
+    needs: identity
     if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
     uses: EggIncTools/EggIdentity/.github/workflows/nuget-publish.yml@main
     with:
@@ -44,44 +44,29 @@ jobs:
       PACKAGES_PAT: ${{ secrets.PACKAGES_PAT }}
 
   nuget-org:
-    needs: [identity, test]
+    needs: [test, pack]
     if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
-    env:
-      BUILD_HEIGHT: ${{ needs.identity.outputs.height }}
-      BUILD_SHA: ${{ needs.identity.outputs.sha }}
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c
         with:
-          global-json-file: global.json
+          name: nupkgs
+          path: nupkgs
 
-      - name: Authenticate GitHub Packages
-        run: |
-          dotnet nuget update source github \
-            --username ${{ github.repository_owner }} \
-            --password ${{ secrets.PACKAGES_PAT }} \
-            --store-password-in-clear-text \
-            --configfile nuget.config
-
-      - name: Pack
-        run: dotnet pack EggSharp.slnx -c Release -o "$RUNNER_TEMP/nupkgs"
-
-      - uses: NuGet/login@v1
+      - uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841
         id: nuget
         with:
           user: ${{ secrets.NUGET_USER }}
 
       - name: Push to nuget.org
         run: |
-          dotnet nuget push "$RUNNER_TEMP/nupkgs/*.nupkg" \
+          dotnet nuget push "nupkgs/*.nupkg" \
             --source https://api.nuget.org/v3/index.json \
             --api-key "${{ steps.nuget.outputs.NUGET_API_KEY }}" \
             --skip-duplicate
 
   notify-packages:
-    needs: [identity, pack]
+    needs: [identity, test, pack]
     if: github.event_name == 'push' && github.ref_name == github.event.repository.default_branch
     uses: EggIncTools/EggIdentity/.github/workflows/notify-deploy.yml@main
     with:

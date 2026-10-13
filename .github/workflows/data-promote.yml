@@ -38,15 +38,22 @@ jobs:
       - name: Status pending
         run: gh api "repos/$GITHUB_REPOSITORY/statuses/$INCOMING" -f state=pending -f context=eggsharp/data-promote -f target_url="$RUN_URL" -f description="Validating game data"
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: main
           fetch-depth: 0
           token: ${{ steps.app.outputs.token }}
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
         with:
-          global-json-file: global.json
+          dotnet-version: "11.0.x"
+          dotnet-quality: preview
+
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/Directory.Build.props', '**/Directory.Packages.props') }}
+          restore-keys: ${{ runner.os }}-nuget-
 
       - name: Fetch incoming
         run: git fetch origin "$INCOMING"
@@ -66,7 +73,8 @@ jobs:
             git fetch origin main
             git checkout -B promote "$INCOMING"
             git rebase origin/main
-            dotnet test EggSharp.slnx
+            dotnet build EggSharp.slnx -c Release
+            dotnet test EggSharp.slnx -c Release --no-build
             if git push origin promote:main; then
               exit 0
             fi

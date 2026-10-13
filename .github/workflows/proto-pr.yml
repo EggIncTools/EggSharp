@@ -29,17 +29,27 @@ jobs:
           echo "BASE_DIR=$RUNNER_TEMP/proto-base" >> "$GITHUB_ENV"
           echo "REPORT=$RUNNER_TEMP/proto-parity.txt" >> "$GITHUB_ENV"
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           ref: main
           path: proto-base-checkout
           sparse-checkout: EggSharp.Protos/proto
 
-      - uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1
         with:
-          global-json-file: global.json
+          dotnet-version: "11.0.x"
+          dotnet-quality: preview
+
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj', '**/Directory.Build.props', '**/Directory.Packages.props') }}
+          restore-keys: ${{ runner.os }}-nuget-
+
+      - name: Build with proposed proto
+        run: dotnet build EggSharp.slnx -c Release
 
       - name: Stage main proto
         run: |
@@ -55,7 +65,7 @@ jobs:
           status=0
           for proto in ei.proto common.proto; do
             if [ -f "$BASE_DIR/$proto" ]; then
-              dotnet run --project EggSharp.ProtoParity/EggSharp.ProtoParity.csproj -- "$BASE_DIR/$proto" "EggSharp.Protos/proto/$proto" EggSharp.ProtoParity/roots.txt > "$RUNNER_TEMP/$proto.txt" 2>&1
+              dotnet EggSharp.ProtoParity/bin/Release/net11.0/EggSharp.ProtoParity.dll "$BASE_DIR/$proto" "EggSharp.Protos/proto/$proto" EggSharp.ProtoParity/roots.txt > "$RUNNER_TEMP/$proto.txt" 2>&1
               code=$?
               cat "$RUNNER_TEMP/$proto.txt" >> "$REPORT"
               if [ "$code" -eq 1 ]; then
@@ -81,6 +91,3 @@ jobs:
             echo '```'
           } > "$RUNNER_TEMP/comment.md"
           gh pr comment "$PR" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/comment.md"
-
-      - name: Build with proposed proto
-        run: dotnet build EggSharp.slnx -c Release

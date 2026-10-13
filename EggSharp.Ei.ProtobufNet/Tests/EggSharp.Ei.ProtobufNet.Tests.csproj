@@ -1,16 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net11.0</TargetFrameworks>
-    <IsPackable>false</IsPackable>
     <ImplicitUsings>disable</ImplicitUsings>
     <EggIncProtoPath>$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)../../EggSharp.Protos/proto/ei.proto'))</EggIncProtoPath>
     <EggIncProtoGenDir>$(BaseIntermediateOutputPath)protogen/$(TargetFramework)/</EggIncProtoGenDir>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="protobuf-net" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" />
-    <PackageReference Include="xunit" />
-    <PackageReference Include="xunit.runner.visualstudio" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Binding\ProtobufNetEiCodec.cs;..\Binding\ProtobufNetEiRinfo.cs;..\..\EggSharp.Ei.Google\Binding\EiApiExtensions.cs;..\..\EggSharp.Ei.Google\Binding\EiEndpoints.cs" Link="Binding\%(Filename)%(Extension)" />

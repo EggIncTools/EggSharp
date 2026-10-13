@@ -11,4 +11,4 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ github.sha }}"
+      - run: echo "$GITHUB_SHA"
