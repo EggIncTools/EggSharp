@@ -451,7 +451,8 @@
             }
           ]
         }
-      ]
+      ],
+      "label": "enlightenment egg value"
     },
     {
       "name": "DEMETERS_NECKLACE",
@@ -685,7 +686,8 @@
             }
           ]
         }
-      ]
+      ],
+      "label": "increases max running chicken bonus"
     },
     {
       "name": "ORNATE_GUSSET",
@@ -939,7 +941,7 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 1,
+              "magnitude": 0.0025,
               "template": "+\u001Bg0.25%\u001Bw to Egg of Prophecy bonus"
             }
           ]
@@ -963,7 +965,7 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 1,
+              "magnitude": 0.005,
               "template": "+\u001Bg0.5%\u001Bw to Egg of Prophecy bonus"
             }
           ]
@@ -987,12 +989,12 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 1,
+              "magnitude": 0.0075,
               "template": "+\u001Bg0.75%\u001Bw to Egg of Prophecy bonus"
             },
             {
               "rarity": 2,
-              "magnitude": 1,
+              "magnitude": 0.008,
               "template": "+\u001Bg0.8%\u001Bw to Egg of Prophecy bonus"
             }
           ]
@@ -1016,22 +1018,23 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 1,
+              "magnitude": 0.01,
               "template": "+\u001Bg1%\u001Bw to Egg of Prophecy bonus"
             },
             {
               "rarity": 2,
-              "magnitude": 1,
+              "magnitude": 0.011000000000000001,
               "template": "+\u001Bg1.1%\u001Bw to Egg of Prophecy bonus"
             },
             {
               "rarity": 3,
-              "magnitude": 1,
+              "magnitude": 0.012,
               "template": "+\u001Bg1.2%\u001Bw to Egg of Prophecy bonus"
             }
           ]
         }
-      ]
+      ],
+      "label": "to Egg of Prophecy bonus"
     },
     {
       "name": "PHOENIX_FEATHER",
@@ -2786,7 +2789,7 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 0,
+              "magnitude": 0.0005,
               "template": "+\u001Bg0.05%\u001Bw to Egg of Prophecy bonus"
             }
           ]
@@ -2805,7 +2808,7 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 0,
+              "magnitude": 0.001,
               "template": "+\u001Bg0.1%\u001Bw to Egg of Prophecy bonus"
             }
           ]
@@ -2829,12 +2832,13 @@
           "effects": [
             {
               "rarity": 0,
-              "magnitude": 0,
+              "magnitude": 0.0015,
               "template": "+\u001Bg0.15%\u001Bw to Egg of Prophecy bonus"
             }
           ]
         }
-      ]
+      ],
+      "label": "to Egg of Prophecy bonus"
     },
     {
       "name": "QUANTUM_STONE",
@@ -2972,7 +2976,8 @@
             }
           ]
         }
-      ]
+      ],
+      "label": "increases max running chicken bonus"
     },
     {
       "name": "LIFE_STONE",
@@ -3120,7 +3125,8 @@
             }
           ]
         }
-      ]
+      ],
+      "label": "effect of host artifact on enlightenment egg farms"
     },
     {
       "name": "TACHYON_STONE_FRAGMENT",
@@ -3565,7 +3571,6 @@
   "dimensionLabels": {
     "0": "[hatchery not supported]",
     "1": "[hatchery not supported]",
-    "2": "earnings",
     "3": "away earnings",
     "4": "internal hatchery rate",
     "5": "egg value",
@@ -3573,7 +3578,6 @@
     "7": "boost boost",
     "8": "boost duration",
     "9": "Soul Egg collection rate",
-    "10": "cash",
     "11": "earnings bonus",
     "12": "bonus per Soul Egg",
     "13": "drone rewards",
@@ -3596,7 +3600,7 @@
     "34": "shell price"
   },
   "effectTemplate": "\u001Bg{prefix}{value}\u001Bw {label}",
-  "binaryVersion": "1.37",
+  "binaryVersion": "1.37.2",
   "provenance": {
     "identity": {
       "origin": "binary",
