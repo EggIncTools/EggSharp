@@ -159,6 +159,15 @@ public sealed class GameDataParsingTests {
     }
 
     [Fact]
+    public void Verify_rejects_a_catalog_boost_without_a_boosts_row() {
+        var docs = new Dictionary<string, string>(GameDataProvider.EmbeddedDocuments()) {
+            ["boosts"] = """{"binaryVersion":"1","rows":[]}"""
+        };
+        var ex = Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Verify(docs));
+        Assert.Contains("quantum_bulb", ex.Message);
+    }
+
+    [Fact]
     public void Validate_rejects_invalid_json() =>
         Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Validate("eggs", "not json"));
 

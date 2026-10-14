@@ -128,7 +128,13 @@ public sealed class GameDataProvider(
         ArgumentNullException.ThrowIfNull(docs);
         foreach (var (id, json) in docs)
             Validate(id, json);
-        return FromDocuments(docs);
+        var provider = FromDocuments(docs);
+        if (docs.ContainsKey(BoostsId)) {
+            var missing = provider.BoostCatalog.Boosts.Select(b => b.Id).Where(id => provider.Resolve(GameData.Families.Boost, id) is null).ToArray();
+            if (missing.Length > 0)
+                throw new GameDataSchemaException($"boost-catalog ids without a boosts row: {string.Join(", ", missing)}.");
+        }
+        return provider;
     }
 
     public static void Validate(string id, string json) {
