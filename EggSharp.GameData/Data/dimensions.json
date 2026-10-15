@@ -1,13 +1,13 @@
 {
   "dimensions": [
-    "bd-soul-eggs",
     "bd-earnings",
     "bd-internal-hatchery",
-    "bd-coop-earnings",
-    "bd-auto-hatchery",
+    "bd-soul-eggs",
     "bd-hatchery",
+    "bd-auto-hatchery",
     "bd-soul-power",
     "bd-drone-rewards",
+    "bd-coop-earnings",
     "bd-coop-egglayingrate"
   ],
   "binaryVersion": "1.37.2",

@@ -24,19 +24,20 @@
       "iconAsset": "b_icon_jimbos_purple_big"
     },
     {
-      "id": "jimbos_orange_big",
-      "price": 7500,
-      "tokenPrice": 3,
-      "seRequired": 100,
-      "iconAsset": "b_icon_jimbos_orange_big"
-    },
-    {
       "id": "jimbos_orange",
       "displayName": "JIMBO'S BEST BIRD FEED",
       "price": 2500,
       "tokenPrice": 2,
       "seRequired": 100,
       "iconAsset": "b_icon_jimbos_orange"
+    },
+    {
+      "id": "jimbos_orange_big",
+      "displayName": "L\u001D",
+      "price": 7500,
+      "tokenPrice": 3,
+      "seRequired": 100,
+      "iconAsset": "b_icon_jimbos_orange_big"
     },
     {
       "id": "subsidy_application",
@@ -49,6 +50,7 @@
     },
     {
       "id": "blank_check",
+      "displayName": "BLANK CHECK",
       "price": 750,
       "tokenPrice": 1,
       "seRequired": 100000,
@@ -64,6 +66,7 @@
     },
     {
       "id": "tachyon_prism_blue_v2",
+      "displayName": "TACHYON PRISM",
       "price": 50,
       "tokenPrice": 0,
       "seRequired": 0,
@@ -71,7 +74,7 @@
     },
     {
       "id": "tachyon_prism_blue_big",
-      "displayName": "TACHYON PRISM",
+      "displayName": "LARGE TACHYON PRISM",
       "price": 500,
       "tokenPrice": 0,
       "seRequired": 0,
@@ -253,6 +256,8 @@
     },
     {
       "id": "soul_beacon_purple",
+      "displayName": "0�w",
+      "description": "You are now eligible for \u001BgCONTRACTS\u001Bz!\n\nComplete these \u001Bgteam-based\u001Bz, time-limited challenges for big rewards. They are incredibly fun and can have a big impact on your progress in Egg, Inc!",
       "price": 1000,
       "tokenPrice": 0,
       "seRequired": 1000000,
