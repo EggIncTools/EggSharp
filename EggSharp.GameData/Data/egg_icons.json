@@ -1,0 +1,166 @@
+{
+  "eggIcons": [
+    {
+      "index": 0,
+      "eggName": "EDIBLE",
+      "iconStem": "egg_edible"
+    },
+    {
+      "index": 1,
+      "eggName": "SUPERFOOD",
+      "iconStem": "egg_superfood"
+    },
+    {
+      "index": 2,
+      "eggName": "MEDICAL",
+      "iconStem": "egg_medical2"
+    },
+    {
+      "index": 3,
+      "eggName": "ROCKET FUEL",
+      "iconStem": "egg_rocketfuel"
+    },
+    {
+      "index": 4,
+      "eggName": "SUPER MATERIAL",
+      "iconStem": "egg_supermaterial"
+    },
+    {
+      "index": 5,
+      "eggName": "FUSION",
+      "iconStem": "egg_fusion"
+    },
+    {
+      "index": 6,
+      "eggName": "QUANTUM",
+      "iconStem": "egg_quantum"
+    },
+    {
+      "index": 7,
+      "eggName": "CRISPR",
+      "iconStem": "egg_crispr"
+    },
+    {
+      "index": 8,
+      "eggName": "TACHYON",
+      "iconStem": "egg_tachyon"
+    },
+    {
+      "index": 9,
+      "eggName": "GRAVITON",
+      "iconStem": "egg_graviton"
+    },
+    {
+      "index": 10,
+      "eggName": "DILITHIUM",
+      "iconStem": "egg_dilithium"
+    },
+    {
+      "index": 11,
+      "eggName": "PRODIGY",
+      "iconStem": "egg_prodigy"
+    },
+    {
+      "index": 12,
+      "eggName": "TERRAFORM",
+      "iconStem": "egg_terraform"
+    },
+    {
+      "index": 13,
+      "eggName": "ANTIMATTER",
+      "iconStem": "egg_antimatter"
+    },
+    {
+      "index": 14,
+      "eggName": "DARK MATTER",
+      "iconStem": "egg_darkmatter"
+    },
+    {
+      "index": 15,
+      "eggName": "A.I.",
+      "iconStem": "egg_ai"
+    },
+    {
+      "index": 16,
+      "eggName": "NEBULA",
+      "iconStem": "egg_vision"
+    },
+    {
+      "index": 17,
+      "eggName": "UNIVERSE",
+      "iconStem": "egg_universe"
+    },
+    {
+      "index": 18,
+      "eggName": "ENLIGHTENMENT",
+      "iconStem": "egg_enlightenment"
+    },
+    {
+      "index": 19,
+      "eggName": "CURIOSITY",
+      "iconStem": "egg_curiosity"
+    },
+    {
+      "index": 20,
+      "eggName": "INTEGRITY",
+      "iconStem": "egg_integrity"
+    },
+    {
+      "index": 21,
+      "eggName": "HUMILITY",
+      "iconStem": "egg_humility"
+    },
+    {
+      "index": 22,
+      "eggName": "RESILIENCE",
+      "iconStem": "egg_resilience"
+    },
+    {
+      "index": 23,
+      "eggName": "KINDNESS",
+      "iconStem": "egg_kindness"
+    },
+    {
+      "index": 24,
+      "eggName": "CHOCOLATE",
+      "iconStem": "egg_chocolate"
+    },
+    {
+      "index": 25,
+      "eggName": "EASTER",
+      "iconStem": "egg_easter"
+    },
+    {
+      "index": 26,
+      "eggName": "WATERBALLOON",
+      "iconStem": "egg_waterballoon"
+    },
+    {
+      "index": 27,
+      "eggName": "FIREWORK",
+      "iconStem": "egg_firework"
+    },
+    {
+      "index": 28,
+      "eggName": "PUMPKIN",
+      "iconStem": "egg_pumpkin"
+    },
+    {
+      "index": 29,
+      "eggName": "CUSTOM",
+      "iconStem": "egg_unknown"
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "eggdata"
+    },
+    "iconStem": {
+      "origin": "binary",
+      "locator": "A::IMG::egg_*",
+      "method": "decoded"
+    }
+  }
+}
