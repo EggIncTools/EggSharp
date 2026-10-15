@@ -306,6 +306,39 @@ public sealed class GameDataParsingTests {
     public void Research_prices_with_non_numeric_element_throws() =>
         Assert.Throws<GameDataSchemaException>(() => ResearchWith(""", "maxLevel": 2""", """[100, "x"]"""));
 
+    private const string EggIconsJson = """
+        {
+          "binaryVersion": "test-1.0",
+          "eggIcons": [
+            { "index": 2, "eggName": "MEDICAL", "iconStem": "egg_medical2" },
+            { "index": 19, "eggName": "CUSTOM", "iconStem": "egg_unknown" }
+          ],
+          "provenance": { "identity": { "source": "binary", "symbol": "eggdata" }, "iconStem": { "source": "binary", "symbol": "A::IMG::egg_*", "note": "decoded" } }
+        }
+        """;
+
+    [Fact]
+    public void Validate_accepts_egg_icons_as_an_optional_auxiliary_document() {
+        Assert.Contains(EggIconCatalog.DocumentId, GameDataProvider.OptionalAuxiliaryDocumentIds);
+        GameDataProvider.Validate(EggIconCatalog.DocumentId, EggIconsJson);
+    }
+
+    [Fact]
+    public void EggIconCatalog_finds_by_index_and_name() {
+        var catalog = EggIconCatalog.Parse(EggIconsJson);
+        Assert.Equal("egg_medical2", catalog.Find(2)?.IconStem);
+        Assert.Equal("egg_unknown", catalog.Find("CUSTOM")?.IconStem);
+        Assert.Null(catalog.Find("NEBULA"));
+        Assert.Equal("test-1.0", catalog.BinaryVersion);
+    }
+
+    [Fact]
+    public void EggIconCatalog_rejects_row_without_iconStem() {
+        const string json = """{ "binaryVersion": "x", "eggIcons": [ { "index": 1, "eggName": "EDIBLE" } ] }""";
+        var ex = Assert.Throws<GameDataSchemaException>(() => EggIconCatalog.Parse(json));
+        Assert.Contains("EDIBLE", ex.Message, StringComparison.Ordinal);
+    }
+
     [Fact]
     public void EggCatalog_rejects_invalid_json() =>
         Assert.Throws<GameDataSchemaException>(() => EggCatalog.Parse("not json"));
