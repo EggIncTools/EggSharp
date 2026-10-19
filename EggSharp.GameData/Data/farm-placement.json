@@ -280,61 +280,6 @@
       "index": 18,
       "name": "ENLIGHTENMENT",
       "hatcheryExtent": 13.5
-    },
-    {
-      "index": 19,
-      "name": "CURIOSITY",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 20,
-      "name": "INTEGRITY",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 21,
-      "name": "HUMILITY",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 22,
-      "name": "RESILIENCE",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 23,
-      "name": "KINDNESS",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 24,
-      "name": "CHOCOLATE",
-      "hatcheryExtent": 15
-    },
-    {
-      "index": 25,
-      "name": "EASTER",
-      "hatcheryExtent": 14.5
-    },
-    {
-      "index": 26,
-      "name": "WATERBALLOON",
-      "hatcheryExtent": 12.100000381469727
-    },
-    {
-      "index": 27,
-      "name": "FIREWORK",
-      "hatcheryExtent": 12.5
-    },
-    {
-      "index": 28,
-      "name": "PUMPKIN",
-      "hatcheryExtent": 12
-    },
-    {
-      "index": 29,
-      "name": "CUSTOM",
-      "hatcheryExtent": 10
     }
   ],
   "missionControlPose": [
@@ -370,8 +315,8 @@
     "missionControlOffset": 1.5,
     "fuelTankBaseOffset": 1.5,
     "fuelTankLockedExtra": 1.5,
-    "fuelTankZUnlocked": 4.2,
-    "fuelTankZLocked": 3.7
+    "fuelTankZUnlocked": 3.7,
+    "fuelTankZLocked": 4.2
   },
   "camera": {
     "distance": [
@@ -577,7 +522,7 @@
     "hyperloopVehicleIndex": 11,
     "emptyVehicleIndex": 12
   },
-  "binaryVersion": "1.37.2",
+  "binaryVersion": "1.35.6",
   "provenance": {
     "habRow": {
       "origin": "binary",

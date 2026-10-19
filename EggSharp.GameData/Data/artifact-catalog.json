@@ -4113,7 +4113,7 @@
       "rarityMult": 10
     }
   ],
-  "binaryVersion": "1.37.2",
+  "binaryVersion": "1.35.6",
   "provenance": {
     "parameters": {
       "origin": "config",
