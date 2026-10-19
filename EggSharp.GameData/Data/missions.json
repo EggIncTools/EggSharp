@@ -95,7 +95,7 @@
     {
       "id": "drone_takedown_30",
       "displayName": "DRONE HUNTER",
-      "goal": "Earn \u001Bb[s8]10 Trillion in one second"
+      "goal": "Take down 25 drones."
     },
     {
       "id": "supply_chain_50m",
@@ -129,6 +129,11 @@
       "id": "egg_value_10b",
       "displayName": "BALLER EGGS",
       "goal": "Lay eggs worth \u001Bb[s8]500 Million"
+    },
+    {
+      "id": "research_400",
+      "displayName": "TONS O' SCIENCE!",
+      "goal": "Research 500 things"
     },
     {
       "id": "drone_takedown_200",
@@ -180,6 +185,11 @@
       "goal": "5 Million chickens live on your farm."
     },
     {
+      "id": "research_800",
+      "displayName": "SCIENCE OVERLOAD",
+      "goal": "Research 650 things"
+    },
+    {
       "id": "drone_takedown_500",
       "goal": "Take down 100 drones."
     },
@@ -209,7 +219,7 @@
     },
     {
       "id": "farm_size_150m",
-      "displayName": "N PLANET",
+      "displayName": "CHICKEN PLANET",
       "goal": "150 Million chickens live on your farm."
     },
     {
@@ -223,7 +233,7 @@
       "goal": "300 Million chickens live on your farm."
     }
   ],
-  "binaryVersion": "1.37.2",
+  "binaryVersion": "1.35.6",
   "provenance": {
     "identity": {
       "origin": "binary",
