@@ -37,7 +37,7 @@ public sealed class GameDataProvider(
     public static readonly ImmutableArray<string> AuxiliaryDocumentIds = ["farm-placement"];
 
     public static readonly ImmutableArray<string> OptionalAuxiliaryDocumentIds =
-        [ArtifactCatalog.DocumentId, MissionShipCatalog.DocumentId, EggIconCatalog.DocumentId];
+        [ArtifactCatalog.DocumentId, MissionShipCatalog.DocumentId, EggIconCatalog.DocumentId, EventIconCatalog.DocumentId];
 
     public static readonly ImmutableArray<string> OptionalDocumentIds = [BoostsId, ArtifactsId];
 
@@ -153,7 +153,8 @@ public sealed class GameDataProvider(
             ArtifactCatalog.DocumentId => ArtifactCatalog.Parse(json),
             MissionShipCatalog.DocumentId => MissionShipCatalog.Parse(json),
             EggIconCatalog.DocumentId => EggIconCatalog.Parse(json),
-            _ => throw new GameDataSchemaException($"Unknown game data document id '{id}'.")
+            EventIconCatalog.DocumentId => EventIconCatalog.Parse(json),
+            _ => GameDataJson.Deserialize<object>(json, $"Game data document '{id}'")
         });
     }
 

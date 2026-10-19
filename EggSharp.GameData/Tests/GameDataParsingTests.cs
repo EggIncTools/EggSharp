@@ -172,8 +172,12 @@ public sealed class GameDataParsingTests {
         Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Validate("eggs", "not json"));
 
     [Fact]
-    public void Validate_rejects_unknown_id() {
-        var ex = Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Validate("nope", "{}"));
+    public void Validate_passes_unknown_id_with_valid_json() =>
+        GameDataProvider.Validate("nope", """{ "anything": [1, 2] }""");
+
+    [Fact]
+    public void Validate_rejects_unknown_id_with_invalid_json() {
+        var ex = Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Validate("nope", "not json"));
         Assert.Contains("nope", ex.Message, StringComparison.Ordinal);
     }
 
@@ -338,6 +342,43 @@ public sealed class GameDataParsingTests {
         var ex = Assert.Throws<GameDataSchemaException>(() => EggIconCatalog.Parse(json));
         Assert.Contains("EDIBLE", ex.Message, StringComparison.Ordinal);
     }
+
+    private const string EventIconsJson = """
+        {
+          "binaryVersion": "test-1.0",
+          "eventIcons": [
+            { "index": 0, "eventType": "drone-boost", "iconStem": "b_icon_drone_boost" },
+            { "index": 5, "eventType": "piggy-boost", "iconStem": "icon_piggy" }
+          ],
+          "provenance": { "identity": { "origin": "binary", "locator": "LIVE_EVENTS" }, "iconStem": { "origin": "binary", "locator": "A::IMG::*", "method": "decoded" } }
+        }
+        """;
+
+    [Fact]
+    public void Validate_accepts_event_icons_as_an_optional_auxiliary_document() {
+        Assert.Contains(EventIconCatalog.DocumentId, GameDataProvider.OptionalAuxiliaryDocumentIds);
+        GameDataProvider.Validate(EventIconCatalog.DocumentId, EventIconsJson);
+    }
+
+    [Fact]
+    public void EventIconCatalog_finds_by_index_and_event_type() {
+        var catalog = EventIconCatalog.Parse(EventIconsJson);
+        Assert.Equal("b_icon_drone_boost", catalog.Find(0)?.IconStem);
+        Assert.Equal("icon_piggy", catalog.Find("piggy-boost")?.IconStem);
+        Assert.Null(catalog.Find("vehicle-sale"));
+        Assert.Equal("test-1.0", catalog.BinaryVersion);
+    }
+
+    [Fact]
+    public void EventIconCatalog_rejects_row_without_iconStem() {
+        const string json = """{ "binaryVersion": "x", "eventIcons": [ { "index": 1, "eventType": "vehicle-sale" } ] }""";
+        var ex = Assert.Throws<GameDataSchemaException>(() => EventIconCatalog.Parse(json));
+        Assert.Contains("vehicle-sale", ex.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void Validate_rejects_event_icons_missing_eventIcons() =>
+        Assert.Throws<GameDataSchemaException>(() => GameDataProvider.Validate(EventIconCatalog.DocumentId, """{ "binaryVersion": "x" }"""));
 
     [Fact]
     public void EggCatalog_rejects_invalid_json() =>
