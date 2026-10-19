@@ -94,9 +94,64 @@
       "index": 18,
       "name": "ENLIGHTENMENT",
       "baseValue": 1E-07
+    },
+    {
+      "index": 19,
+      "name": "CURIOSITY",
+      "baseValue": 1
+    },
+    {
+      "index": 20,
+      "name": "INTEGRITY",
+      "baseValue": 1
+    },
+    {
+      "index": 21,
+      "name": "HUMILITY",
+      "baseValue": 1
+    },
+    {
+      "index": 22,
+      "name": "RESILIENCE",
+      "baseValue": 1
+    },
+    {
+      "index": 23,
+      "name": "KINDNESS",
+      "baseValue": 1
+    },
+    {
+      "index": 24,
+      "name": "CHOCOLATE",
+      "baseValue": 5
+    },
+    {
+      "index": 25,
+      "name": "EASTER",
+      "baseValue": 0.05
+    },
+    {
+      "index": 26,
+      "name": "WATERBALLOON",
+      "baseValue": 0.1
+    },
+    {
+      "index": 27,
+      "name": "FIREWORK",
+      "baseValue": 4.99
+    },
+    {
+      "index": 28,
+      "name": "PUMPKIN",
+      "baseValue": 0.99
+    },
+    {
+      "index": 29,
+      "name": "CUSTOM",
+      "baseValue": 0.99
     }
   ],
-  "binaryVersion": "1.35.6",
+  "binaryVersion": "1.37.2",
   "provenance": {
     "identity": {
       "origin": "binary",
