@@ -1,0 +1,106 @@
+{
+  "eventIcons": [
+    {
+      "index": 0,
+      "eventType": "piggy-boost",
+      "iconStem": "icon_piggy"
+    },
+    {
+      "index": 1,
+      "eventType": "piggy-cap-boost",
+      "iconStem": "icon_piggy"
+    },
+    {
+      "index": 2,
+      "eventType": "prestige-boost",
+      "iconStem": "b_icon_soul_boost"
+    },
+    {
+      "index": 3,
+      "eventType": "earnings-boost",
+      "iconStem": "b_icon_earnings_boost"
+    },
+    {
+      "index": 4,
+      "eventType": "gift-boost",
+      "iconStem": "b_icon_gift_boost"
+    },
+    {
+      "index": 5,
+      "eventType": "drone-boost",
+      "iconStem": "b_icon_drone_boost"
+    },
+    {
+      "index": 6,
+      "eventType": "epic-research-sale",
+      "iconStem": "icon_research"
+    },
+    {
+      "index": 7,
+      "eventType": "research-sale",
+      "iconStem": "icon_research"
+    },
+    {
+      "index": 8,
+      "eventType": "hab-sale",
+      "iconStem": "b_icon_hab_sale"
+    },
+    {
+      "index": 9,
+      "eventType": "vehicle-sale",
+      "iconStem": "b_icon_vehicle_sale"
+    },
+    {
+      "index": 10,
+      "eventType": "boost-sale",
+      "iconStem": "icon_boost"
+    },
+    {
+      "index": 11,
+      "eventType": "boost-duration",
+      "iconStem": "icon_clock"
+    },
+    {
+      "index": 12,
+      "eventType": "crafting-sale",
+      "iconStem": "icon_afx_craft"
+    },
+    {
+      "index": 13,
+      "eventType": "mission-capacity",
+      "iconStem": "icon_afx_chest_2"
+    },
+    {
+      "index": 14,
+      "eventType": "mission-duration",
+      "iconStem": "icon_afx_mission_duration"
+    },
+    {
+      "index": 15,
+      "eventType": "mission-fuel",
+      "iconStem": "icon_afx_mission_fuel"
+    },
+    {
+      "index": 16,
+      "eventType": "shell-sale",
+      "iconStem": "icon_shells"
+    },
+    {
+      "index": 17,
+      "eventType": "Shells are on sa",
+      "iconStem": "egg_soul"
+    }
+  ],
+  "binaryVersion": "1.37.2",
+  "provenance": {
+    "identity": {
+      "origin": "binary",
+      "locator": "LIVE_EVENTS"
+    },
+    "iconStem": {
+      "origin": "binary",
+      "locator": "A::IMG::*",
+      "method": "decoded"
+    }
+  }
+}
