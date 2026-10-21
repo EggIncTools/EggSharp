@@ -18,17 +18,11 @@
     },
     {
       "id": "jimbos_purple_big",
+      "displayName": "JIMBO'S PREMIUM BIRD FEED",
       "price": 750,
       "tokenPrice": 1,
       "seRequired": 1,
       "iconAsset": "b_icon_jimbos_purple_big"
-    },
-    {
-      "id": "jimbos_orange_big",
-      "price": 7500,
-      "tokenPrice": 3,
-      "seRequired": 100,
-      "iconAsset": "b_icon_jimbos_orange_big"
     },
     {
       "id": "jimbos_orange",
@@ -37,6 +31,14 @@
       "tokenPrice": 2,
       "seRequired": 100,
       "iconAsset": "b_icon_jimbos_orange"
+    },
+    {
+      "id": "jimbos_orange_big",
+      "displayName": "JIMBO'S BEST BIRD FEED",
+      "price": 7500,
+      "tokenPrice": 3,
+      "seRequired": 100,
+      "iconAsset": "b_icon_jimbos_orange_big"
     },
     {
       "id": "subsidy_application",
@@ -49,6 +51,8 @@
     },
     {
       "id": "blank_check",
+      "displayName": "BLANK CHECK",
+      "description": "This gives you instant cash equalling the amount in the description. Not boostable.",
       "price": 750,
       "tokenPrice": 1,
       "seRequired": 100000,
@@ -57,6 +61,7 @@
     {
       "id": "money_printer",
       "displayName": "MONEY PRINTER",
+      "description": "This gives you instant cash equalling the amount in the description. Not boostable.",
       "price": 2500,
       "tokenPrice": 2,
       "seRequired": 5000000,
@@ -64,6 +69,7 @@
     },
     {
       "id": "tachyon_prism_blue_v2",
+      "displayName": "TACHYON PRISM",
       "price": 50,
       "tokenPrice": 0,
       "seRequired": 0,
@@ -71,7 +77,7 @@
     },
     {
       "id": "tachyon_prism_blue_big",
-      "displayName": "TACHYON PRISM",
+      "displayName": "LARGE TACHYON PRISM",
       "price": 500,
       "tokenPrice": 0,
       "seRequired": 0,
@@ -121,6 +127,7 @@
     {
       "id": "soul_beacon_purple_v2",
       "displayName": "EPIC SOUL BEACON",
+      "description": "Increases the rate at which you earn soul eggs.",
       "price": 1000,
       "tokenPrice": 0,
       "seRequired": 1000000,
@@ -129,6 +136,7 @@
     {
       "id": "soul_beacon_orange",
       "displayName": "LEGENDARY SOUL BEACON",
+      "description": "Increases the rate at which you earn soul eggs.",
       "price": 10000,
       "tokenPrice": 0,
       "seRequired": 10000000000,
@@ -146,6 +154,7 @@
     {
       "id": "boost_beacon_purple",
       "displayName": "EPIC BOOST BEACON",
+      "description": "Multiplies the effect of ALL other boosts, except instant cash and discount events. The effect on earnings boosts does NOT compound.",
       "price": 8000,
       "tokenPrice": 4,
       "seRequired": 100000,
@@ -154,6 +163,7 @@
     {
       "id": "boost_beacon_blue_big",
       "displayName": "LARGE BOOST BEACON",
+      "description": "Multiplies the effect of ALL other boosts, except instant cash and discount events. The effect on earnings boosts does NOT compound.",
       "price": 15000,
       "tokenPrice": 3,
       "seRequired": 500000,
@@ -162,6 +172,7 @@
     {
       "id": "boost_beacon_orange",
       "displayName": "LEGENDARY BOOST BEACON",
+      "description": "Multiplies the effect of ALL other boosts, except instant cash and discount events. The effect on earnings boosts does NOT compound.",
       "price": 50000,
       "tokenPrice": 8,
       "seRequired": 100000000,
@@ -179,6 +190,7 @@
     {
       "id": "soul_mirror_purple",
       "displayName": "EPIC SOUL MIRROR",
+      "description": "Temporarily have the earnings bonus of the top player in your co-op.",
       "price": 500,
       "tokenPrice": 2,
       "seRequired": 1000,
@@ -187,6 +199,7 @@
     {
       "id": "soul_mirror_orange",
       "displayName": "LEGENDARY SOUL MIRROR",
+      "description": "Temporarily have the earnings bonus of the top player in your co-op.",
       "price": 2000,
       "tokenPrice": 3,
       "seRequired": 10000,
@@ -211,6 +224,7 @@
     },
     {
       "id": "jimbos_blue",
+      "displayName": "JIMBO'S EXCELLENT BIRD FEED",
       "price": 50,
       "tokenPrice": 1,
       "seRequired": 0,
@@ -218,6 +232,7 @@
     },
     {
       "id": "jimbos_blue_big",
+      "displayName": "JIMBO'S EXCELLENT BIRD FEED",
       "price": 100,
       "tokenPrice": 1,
       "seRequired": 0,
@@ -225,6 +240,7 @@
     },
     {
       "id": "jimbos_purple",
+      "displayName": "JIMBO'S PREMIUM BIRD FEED",
       "price": 250,
       "tokenPrice": 2,
       "seRequired": 0,
@@ -232,6 +248,7 @@
     },
     {
       "id": "tachyon_prism_blue",
+      "displayName": "ON PRISMPRISM",
       "price": 200,
       "tokenPrice": 1,
       "seRequired": 0,
@@ -239,6 +256,7 @@
     },
     {
       "id": "tachyon_prism_purple",
+      "displayName": "POWERFUL TACHYON PRISM",
       "price": 1000,
       "tokenPrice": 3,
       "seRequired": 0,
@@ -246,6 +264,8 @@
     },
     {
       "id": "soul_beacon_blue",
+      "displayName": "SOUL BEACON",
+      "description": "Increases the rate at which you earn soul eggs.",
       "price": 200,
       "tokenPrice": 0,
       "seRequired": 10000,
@@ -253,6 +273,8 @@
     },
     {
       "id": "soul_beacon_purple",
+      "displayName": "EPIC SOUL BEACON",
+      "description": "Increases the rate at which you earn soul eggs.",
       "price": 1000,
       "tokenPrice": 0,
       "seRequired": 1000000,

@@ -22,6 +22,7 @@
     },
     {
       "id": "upgrade_egg",
+      "displayName": "EGG UP",
       "goal": "Start a new farm with an upgraded egg."
     },
     {
@@ -35,12 +36,24 @@
       "goal": "Grow your farm by 5000 chickens"
     },
     {
+      "id": "hatch1",
+      "displayName": "CHAOS",
+      "goal": "Hatch enough chickens to have 150 on the screen at one time."
+    },
+    {
       "id": "boost_refill",
+      "displayName": "BOOSTED",
       "goal": "Use a boost!"
     },
     {
       "id": "research_1",
+      "displayName": "SCIENCE!",
       "goal": "Research 150 things"
+    },
+    {
+      "id": "expand2",
+      "displayName": "BIG FARM",
+      "goal": "Expand your farm to hold 15,000 chickens."
     },
     {
       "id": "shipping250k",
@@ -83,8 +96,13 @@
       "goal": "Research 5 EPIC things"
     },
     {
-      "id": "big_farm1",
+      "id": "hatch_2",
       "displayName": "MORE CHAOS",
+      "goal": "Hatch enough chickens to have 175 on the screen at one time."
+    },
+    {
+      "id": "big_farm1",
+      "displayName": "75K CHICKENS",
       "goal": "75,000 chickens live on your farm."
     },
     {
@@ -95,14 +113,16 @@
     {
       "id": "drone_takedown_30",
       "displayName": "DRONE HUNTER",
-      "goal": "Earn \u001Bb[s8]10 Trillion in one second"
+      "goal": "Take down 25 drones."
     },
     {
       "id": "supply_chain_50m",
+      "displayName": "SUPPLY CHAIN",
       "goal": "Have a shipping capacity of 50,000,000 eggs/min."
     },
     {
       "id": "big_farm2",
+      "displayName": "BIG TOWN",
       "goal": "100,000 chickens live on your farm."
     },
     {
@@ -126,9 +146,19 @@
       "goal": "Average habitat holds 300K chickens"
     },
     {
+      "id": "hatch3",
+      "displayName": "SO MUCH CHAOS",
+      "goal": "Hatch enough chickens to have 220 on the screen at one time."
+    },
+    {
       "id": "egg_value_10b",
       "displayName": "BALLER EGGS",
       "goal": "Lay eggs worth \u001Bb[s8]500 Million"
+    },
+    {
+      "id": "research_400",
+      "displayName": "TONS O' SCIENCE!",
+      "goal": "Research 500 things"
     },
     {
       "id": "drone_takedown_200",
@@ -147,6 +177,7 @@
     },
     {
       "id": "supply_chain_10m",
+      "displayName": "SUPPLY CHAIN",
       "goal": "Have a shipping capacity of 500,000,000 eggs/min."
     },
     {
@@ -180,7 +211,13 @@
       "goal": "5 Million chickens live on your farm."
     },
     {
+      "id": "research_800",
+      "displayName": "SCIENCE OVERLOAD",
+      "goal": "Research 650 things"
+    },
+    {
       "id": "drone_takedown_500",
+      "displayName": "DRONE SLAYER",
       "goal": "Take down 100 drones."
     },
     {
@@ -200,6 +237,7 @@
     },
     {
       "id": "research_all",
+      "displayName": "SCIENCE OVERLOAD",
       "goal": "Research 800 things."
     },
     {
@@ -209,7 +247,7 @@
     },
     {
       "id": "farm_size_150m",
-      "displayName": "N PLANET",
+      "displayName": "CHICKEN PLANET",
       "goal": "150 Million chickens live on your farm."
     },
     {
@@ -221,6 +259,11 @@
       "id": "farm_size_300m",
       "displayName": "CHICKEN GALAXY",
       "goal": "300 Million chickens live on your farm."
+    },
+    {
+      "id": "soul_50k",
+      "displayName": "SOUL KING",
+      "goal": "Collect 250,000 Soul Eggs."
     }
   ],
   "binaryVersion": "1.37.2",

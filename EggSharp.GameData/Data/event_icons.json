@@ -84,11 +84,6 @@
       "index": 16,
       "eventType": "shell-sale",
       "iconStem": "icon_shells"
-    },
-    {
-      "index": 17,
-      "eventType": "Shells are on sa",
-      "iconStem": "egg_soul"
     }
   ],
   "binaryVersion": "1.37.2",
